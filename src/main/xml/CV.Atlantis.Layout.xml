@@ -8,7 +8,7 @@
         marginBottom="20"
         marginLeft="15"
         marginRight="15"
-        includeScreenShots="true">
+        includeScreenShots="false">
   
   <RoundedBox spaceBefore="5" strokeColor="#CCCCCC" strokeWidth="0.25" radius="3.25" headerWidth="60.00" hdrStartColor="#FDFDFD" hdrEndColor="#E0E0E0" bodyStartColor="#FEFEFE" bodyEndColor="#F4F4F4"/>
 

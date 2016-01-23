@@ -49,3 +49,5 @@ Temporary Items
 /*.iml
 /target
 /.idea
+/src/main/resources/*.fo
+/src/main/resources/*.fo
