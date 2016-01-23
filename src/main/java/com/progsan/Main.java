@@ -33,8 +33,8 @@ public class Main {
         URI baseURL = new URI("file:///" + inputFilePath.getParent().toString().replaceAll("\\\\", "/").replaceAll(" ", "%20")+"/");
         System.out.println("basePath: " + baseURL);
         FOPTransformer.transform(configFilePath.toString().replaceAll(" ", "%20"), inputFilePath.toString(), outputFile, baseURL);
-
     }
+
     public static Path getFullPathName(String relFileName) throws URISyntaxException {
         URL resourceUrl = FOPTransformer.class.getResource(relFileName);
         Path resourcePath = Paths.get(resourceUrl.toURI());
