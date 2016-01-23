@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Technologies>
+    <Technology id="Java" type="platform">
+        <Icon>images/Win7JavaLibrary.png</Icon>
+        <Versions>
+            <Version id="JDK 1.8">JDK 1.8</Version>
+            <Version id="JDK 1.7">JDK 1.7</Version>
+            <Version id="JDK 1.6">JDK 1.6</Version>
+            <Version id="JDK 1.5">JDK 1.5</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Wicket" type="framework" parent="Java">
+        <Icon>images/apache_wicket.png</Icon>
+        <Versions>
+            <Version id="Wicket-1.6">Wicket-1.6</Version>
+            <Version id="Wicket-1.5">Wicket-1.5</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Spring" type="framework" parent="Java">
+        <Icon>images/spring.png</Icon>
+        <Versions>
+            <Version id="Spring-3">Spring-3</Version>
+            <Version id="Spring-2">Spring-2</Version>
+        </Versions>
+    </Technology>
+    <Technology id="IntelliJ" type="IDE" parent="JAVA">
+        <Icon>intellij_icon.png</Icon>
+        <Versions>
+            <Version id="IntelliJ Idea-15">IntelliJ Idea-15</Version>
+            <Version id="IntelliJ Idea-14">IntelliJ Idea-14</Version>
+            <Version id="IntelliJ Idea-13">IntelliJ Idea-13</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Eclipse" type="IDE" parent="JAVA">
+        <Icon>images/Eclipse.png</Icon>
+        <Versions>
+            <Version id="Eclipse-4">Eclipse-4</Version>
+            <Version id="Eclipse-3">Eclipse-3</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Oracle" type="database">
+        <Icon>images/Oracle.png</Icon>
+        <Versions>
+            <Version id="Oracle-12">Oracle-12</Version>
+            <Version id="Oracle-11">Oracle-11</Version>
+            <Version id="Oracle-10">Oracle-10</Version>
+        </Versions>
+    </Technology>
+    <Technology id="MySQL" type="database">
+        <Icon>images/MySQL.png</Icon>
+        <Versions>
+            <Version id="MySQL-5.5">MySQL-5.5</Version>
+            <Version id="MySQL-5.0">MySQL-5.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="WAS" type="servlet container" parent="Java">
+        <Icon>images/WebSphere.png"</Icon>
+        <Versions>
+            <Version id="WAS-8">WebSphere-8.5</Version>
+            <Version id="WAS-7">WebSphere-7.0</Version>
+        </Versions>
+    </Technology>
+</Technologies>

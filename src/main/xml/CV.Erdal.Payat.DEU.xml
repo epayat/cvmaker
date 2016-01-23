@@ -172,7 +172,7 @@
         <Icon url="images/others.png"/>
         <Details>
           <Detail id="1">Firebird / Interbase, MySQL</Detail>
-          <Detail id="2">SVN / CVS, Bugzilla, VMWare</Detail>
+          <Detail id="2">GIT / SVN / CVS, Bugzilla, VMWare</Detail>
           <Detail id="3">Confluence, MS-Office</Detail>
           <Detail id="4">Photoshop, Gimp</Detail>
           <Detail id="5">Selenium</Detail>
@@ -243,7 +243,7 @@
           <Detail>Deployment auf IBM Websphere 7.0 Application Server</Detail>
         </Task>
         <Task>
-          <Summary>Branded OAuth-2 Authentifizierung Server</Summary>
+          <Summary>Branded OAuth-2 Authentifizierung und SSO Server</Summary>
           <Detail>Vollständige Implementierung von OAuth-2 Spezifikation(RFC6749) für die authentifizierung von externen Anwendungen(als RESTful Jersey Anw.).</Detail>
           <Detail>Einsatz von Wicket-6 und Bootstrap-2 für das Admin-Tool UI.</Detail>
           <Detail>Einsatz von JPA 2.0 mit Hybernate(früher EclipseLink) als Provider</Detail>
@@ -253,7 +253,7 @@
           <Summary>Mobile Dokument Scanner App.</Summary>
           <Detail>Implementierung von Backend-Side der Anwendung als RESTFul-Service(Jersey Framework).</Detail>
           <Detail>Bindung an (vorher entwickelte) OAuth Server</Detail>
-          <Detail>Einsatz von JPA 2.0 mit EclipseLink als Provider</Detail>
+          <Detail>Einsatz von JPA 2.0 mit Hybernate(früher EclipseLink) als Provider</Detail>
           <Detail>Deployment auf IBM Websphere 8.5 Application Server</Detail>
         </Task>
       </Tasks>
@@ -272,7 +272,10 @@
         <Technology caption="JavaScript"/>
         <Technology caption="Web-Services"/>
         <Technology caption="RESTful, JSON"/>
-        <Technology caption="Maven"/>      
+        <Technology caption="Jersey"/>
+        <Technology caption="Apache OLTU"/>
+        <Technology caption="OAUTH2"/>
+        <Technology caption="Maven"/>
       </Technologies>
     </CareerDetail>
     <CareerDetail id="Progsan2103" type="Projekt" startedOn="03/2013" finishedOn="07/2013" duration="4M">
@@ -296,6 +299,7 @@
         <Technology caption="Jetty"/>
         <Technology caption="JavaScript"/>
         <Technology caption="JQuery"/>
+        <Technology caption="GIT"/>
       </Technologies>
     </CareerDetail>    
     <CareerDetail id="cas2012" type="Projekt" startedOn="01/2012" finishedOn="01/2013" duration="12M">
