@@ -28,7 +28,7 @@ public class Main {
 
         Path configFilePath = getFullPathName(configFileName);
         Path inputFilePath = getFullPathName(inputFileName);
-        //String inputFilePath = Paths.get(new URL(workDir + "/target" + inputFileName));
+
         String outputFile = workDir + "/target/" + outputFileName;
         URI baseURL = new URI("file:///" + inputFilePath.getParent().toString().replaceAll("\\\\", "/").replaceAll(" ", "%20")+"/");
         System.out.println("basePath: " + baseURL);
