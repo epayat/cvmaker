@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type='text/xsl' href='CV.Atlantis.xslt'?>
+<Resume language="DEU"
+        anonym="false"
+        anonymId="Kontaktperson: Volkmar Nebelung"
+        recruiterName="VARIUS IT GmbH &amp; Co. KG "
+        recruiterEmail="Volkmar.Nebelung@varius-it.com">
+  <Personal>
+    <FirstName>Erdal</FirstName>
+    <LastName>Payat</LastName>
+    <Career>Analyst-Programmierer</Career>
+    <Phone>+49 173 454 01 82</Phone>
+    <Email>epayat@gmail.com</Email>s
+    <Address>
+      <Street>Stangenbrunnengasse7</Street>
+      <PostalCode>67433</PostalCode>
+      <City>Neustadt/Weinstraße</City>
+      <Country>DE</Country>
+    </Address>
+    <!--Photo url="images/Photo.png"/-->
+    <Photo url="images/PASS_FOTO.png"/>
+    <MaritalStatus>Single</MaritalStatus>
+    <Birthdate>03.05.1975</Birthdate>
+    <Weight unit="kg">78</Weight>
+    <Height unit="cm">182</Height>
+    <Interests>
+      <Interest>Naturwissenschaften</Interest>
+      <Interest>Politik / Wirtschaft</Interest>
+      <Interest>Psychologie</Interest>
+      <Interest>Philosophie</Interest>
+      <Interest>PC Hardware/Overclocking/Modding</Interest>
+      <Interest>Schwimmen</Interest>
+    </Interests>
+    <SalaryExpectation currency="€" per="year" kind="brut">75.000</SalaryExpectation>
+    <EarlyStartDate>Ab sofort</EarlyStartDate>
+    <DriversLicence>A</DriversLicence>
+  </Personal>
+  <Skills>
+    <SkillGroup id="1" caption="Programmiersprachen">
+      <Skill id="1">
+        <Name>
+          <Text>Delphi</Text>
+        </Name>
+        <Icon url="images/Win7DelphiLibrary.png"/>
+        <Details>
+          <Detail id="1">Komponentenentwicklung</Detail>
+          <Detail id="2">Open-Tools API, WinAPI</Detail>
+          <Detail id="3">Opt. durch Assembler + SSE / MMX (SIMD)</Detail>
+        </Details>
+      </Skill>
+      <Skill id="3">
+        <Name>
+          <Text>Microsoft DotNet</Text>
+          <Icon url="images/Microsoft_NET_Logo.png"/>
+        </Name>
+        <Icon url="images/Win7MVS9Library.png"/>
+        <Details>
+          <Detail id="1">C# Syntax</Detail>
+          <Detail id="2">WPF, ZAML</Detail>
+          <Detail id="3">WCF</Detail>
+        </Details>
+      </Skill>
+      <Skill id="5">
+        <Name>
+          <Text>JAVA</Text>
+        </Name>
+        <Icon url="images/Win7JavaLibrary.png"/>
+        <Details>
+          <Detail id="1">JDK 1.7, Intelli-J Idea / Eclipse</Detail>
+          <Detail id="2">Wicket, Spring, JPA, Hybernate, EcliplselLink, Servlet, Jersey, Apache POI, Apache OLTU(OAuth2), SWT, RCP, Maven</Detail>
+        </Details>
+      </Skill>      
+    </SkillGroup>
+    <SkillGroup id="2" caption="Datenbankkenntnisse">
+      <Skill id="2">
+        <Name>
+          <Text>Oracle</Text>
+          <Icon url="images/Oracle.png"/>
+        </Name>
+        <Icon url="images/database.png"/>
+        <Details>
+          <Detail id="1">PL/SQL </Detail>
+          <Detail id="2">Spatial API</Detail>
+          <Detail id="3">Direct Path</Detail>
+          <Detail id="4">Objektorientierung durch Updatable Views</Detail>
+        </Details>
+      </Skill>
+      <Skill id="4">
+        <Name>
+          <Text>SQL Server</Text>
+        </Name>
+        <Icon url="images/SqlServer.png"/>
+        <Details>
+          <Detail id="1">Transact-SQL</Detail>
+          <Detail id="2">Objektorientierung durch Updatable Views</Detail>
+        </Details>
+      </Skill>
+      <Skill id="6">
+        <Name>
+          <Text>PostgreSQL</Text>
+        </Name>
+        <Icon url="images/postgres.png"/>
+        <Details>
+          <Detail id="1">PG/SQL</Detail>
+          <Detail id="2">Objektorientierung durch Updatable Views</Detail>
+        </Details>
+      </Skill>      
+    </SkillGroup>
+    <SkillGroup id="3" caption="Andere">
+      <Skill id="7">
+        <Name>
+          <Text>WinAPI</Text>
+        </Name>
+        <Icon url="images/windows-icon.png"/>
+        <Details>
+          <Detail id="1">GDI / GDI+</Detail>
+          <Detail id="2">PWM, Shell, Kernel, MSI</Detail>
+          <Detail id="3">COM / DCOM</Detail>
+          <Detail id="4">WinINET, Async. Pluggable  Protocols</Detail>
+        </Details>
+      </Skill>
+      <Skill id="8">
+        <Name>
+          <Text>RPC / Verteilte Anwendungen </Text>
+        </Name>
+        <Icon url="images/icon-distributed-computing.png"/>
+        <Details>
+          <Detail id="3">Webservices (SOAP, Rest)</Detail>
+          <Detail id="1">DCOM</Detail>          
+          <Detail id="4">.NET Remoting, EJB</Detail>
+        </Details>
+      </Skill>
+      <Skill id="9">
+        <Name>
+          <Text>HTML</Text>
+        </Name>
+        <Icon url="images/HTML.png"/>
+        <Details>
+          <Detail id="1">CSS 3, Bootstrap</Detail>
+          <Detail id="2">DHTML 5</Detail>
+          <Detail id="3">JavaScript, JQuery</Detail>
+          <Detail id="4">VML, SVG, Canvas</Detail>
+        </Details>
+      </Skill>
+      <Skill id="10">
+        <Name>
+          <Text>Internet</Text>
+        </Name>
+        <Icon url="images/internet.png"/>
+        <Details>
+          <Detail id="1">HTTP 1.1</Detail>
+          <Detail id="2">FTP</Detail>
+          <Detail id="3">TCP/IP</Detail>
+        </Details>
+      </Skill>
+      <Skill id="11">
+        <Name>
+          <Text>XML</Text>
+        </Name>
+        <Icon url="images/XML.png"/>
+        <Details>
+          <Detail id="1">XSLT</Detail>
+          <Detail id="2">XSL-FO, Apache-FOP</Detail>
+          <Detail id="3">XPATH</Detail>
+          <Detail id="4">XSD / DTD</Detail>
+        </Details>
+      </Skill>
+      <Skill id="12">
+        <Name>
+          <Text>Andere</Text>
+        </Name>
+        <Icon url="images/others.png"/>
+        <Details>
+          <Detail id="1">Firebird / Interbase, MySQL</Detail>
+          <Detail id="2">SVN / CVS, Bugzilla, VMWare</Detail>
+          <Detail id="3">Confluence, MS-Office</Detail>
+          <Detail id="4">Photoshop, Gimp</Detail>
+          <Detail id="5">Selenium</Detail>
+        </Details>
+      </Skill>
+    </SkillGroup>   
+  </Skills>
+  <Fields>
+    <Field>Fahrzeugfinanzierung (Leasing &amp; Kredit)</Field>
+    <Field>Enterprise Webanwendungen (Backend &amp; Frontend)</Field>
+    <Field>Userinterface Design &amp; Development</Field>
+    <Field>Business Software Beratung / Analysis / Design / Entwicklung</Field>
+    <Field>Bildverarbeitung / Erkennung</Field>
+    <Field>Kognitive Anwendungen</Field>
+    <Field>System Programmierung / Komponentenentwicklung</Field>
+    <Field>Datenbank Design / Optimierung / Programmierung / Migrieren</Field>
+  </Fields>
+  <PersonalDataSheet>
+    <Item startedOn="04/2014" endedOn="04/2016" formOfEmp="Freiberufler" instLogo="images/logo-santander.png" instName="Santander Bank">Mitarbeit an einem Web basierten Fahrzeug-Finanzierung-System. Neue-Entwicklung eines web basierten Datenimporttools für die Captives. </Item>
+    <Item startedOn="03/2013" endedOn="07/2013" formOfEmp="Freiberufler" instLogo="images/Progsan-Logo-Vert.png" instName="Progsan Software">Entwicklung einer Web basierten Lebenslauf-Erstellungstool. </Item>
+    <Item startedOn="01/2012" endedOn="01/2013" formOfEmp="Freiberufler" instLogo="images/CAS_Daimler.png" instName="CAS AG, Daimler AG">Mitarbeit an Daimler/Mercedes-Benz LKW Vertrieb Software(MBKS). Dabei Implementierung von Leasing-Baustein von Daimler/Mercedes-Benz-Charterway Projekt.</Item>
+    <Item startedOn="02/2011" endedOn="10/2011" formOfEmp="Freiberufler" instLogo="images/TuneUp.png" instName="TuneUp Utilities">Mitarbeit an TuneUp Utilities 2012 als Softwareentwickler</Item>
+    <Item startedOn="12/2008" endedOn="02/2011" formOfEmp="Freiberufler" instLogo="images/JonasRedmann.png" instName="Jonas&amp;Redmann">Komplete Entwicklung eines Visualisierung-Frameworks(HMI). Mitarbeit an einer Schnittstelle zu einem Messgerät.</Item>
+    <Item startedOn="07/2008" endedOn="12/2008" formOfEmp="Freiberufler" instLogo="images/TuneUp.png" instName="TuneUp Utilities">Mitarbeit an TuneUp Utilities 2009 als Softwareentwickler.</Item>
+    <Item startedOn="04/2008" endedOn="07/2008" formOfEmp="Freiberufler" instLogo="images/eisen-partner-logo.png" instName="Eisen&amp;Partner">Entwicklung von einer auf Oracle-Spatial-API basierten PL/SQL Anwendung für Geo-Daten(Teleatlas) Interpolation.</Item>
+    <Item startedOn="01/2008" endedOn="02/2008" formOfEmp="Freiberufler" instLogo="images/Debitel.png" instName="Debitel">Mitarbeit an Anpassung der eigenen Warenwirtschaft Software als Softwareentwickler.</Item>
+    <Item startedOn="01/2006" endedOn="06/2007" formOfEmp="Freiberufler" instLogo="images/Kia_MotorsH.png" instName="KIA MOTORS">Komplete Entwicklung einer Warenwirtschaft für Werbung-Zuschuss-Verwaltung.</Item>
+    <Item startedOn="01/2005" endedOn="12/2005" formOfEmp="Freiberufler" instLogo="images/ZaunerPartner.png" instName="Zauner&amp;Parter">Komplete Entwicklung von einigen Software-Modulen für die Erkennung der Fahrdaten von Ausdrucken digitaler Tachographen und Analog Tachograph-Scheiben. Entwicklung eines kryptographischen Signatur-Überprüfung-Modules.</Item>
+    <Item startedOn="02/2005" endedOn="04/2005" formOfEmp="Freiberufler" instLogo="images/LTur.png" instName="3w4u GmbH, Ltur">Mitarbeit an einem Reisebüro-Portals, das online Flug- und Hotelbuchung kombiniert.</Item>
+    <Item startedOn="09/2001" endedOn="09/2002" formOfEmp="Sprachkurse"  instLogo="images/VHS.png" instName="VHS">Deutschkurs an der Volkshochschule bis zur Oberstufe.Studienkolleg an der Goethe Universität einschließlich DSH Zertifizierung.</Item>
+    <Item startedOn="09/1995" endedOn="07/2000" formOfEmp="Studium"      instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">Marmara Universität, Studiengang Computer &amp; Elektronik(Englisch)</Item>
+    <Item startedOn="09/1994" endedOn="07/1995" formOfEmp="Sprachkurs"   instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">English Preparing School an der Marmara Universität.</Item>
+    <!--Item startedOn="09/1992" endedOn="07/1994" formOfEmp="Studium"      instLogo="images/GaziUnv.png" instName="Gazi Unv.">Gazi Universität, Studiengang Computer &amp; Elektronik.</Item-->
+    <Item startedOn="09/1989" endedOn="07/1992" formOfEmp="Berufsschule" instLogo="images/mehmet akif ersoy end.meslek.lisesi.logo.png" instName="mehmet akif ersoy end.meslek lisesi">Mehmet Akif Ersoy Berufsschule Computer &amp; Elektronik</Item>
+  </PersonalDataSheet>
+  <Languages>
+    <Language id="DEU" level="090"/>
+    <Language id="ENU" level="080"/>
+    <Language id="TRK" level="100"/>
+  </Languages>
+    <PersonalAchievements>
+        <item year="1996">SMS (Service Management System) Einführung für Canon Turkey(HESMAK)</item>
+        <item year="1997">Aufbau eines großen Wide-Area-Networks (umfasst 8 Städte) für einen Börsenhändler Unternehmen(GEDIK)</item>
+        <item year="1997">Entwicklung eines Datenbanktreibers für eine lokale file basierte Datenbank.</item>
+        <item year="1997">Entwicklung eines Datapump-Software, basiert auf den vorher entwickelten Treiber</item>
+        <item year="1998">Level-1 ODBC Trieber Entwicklung.</item>
+        <item year="1999">Entwicklung eines multidimensionalen Management Information Systems für ein großes Textil Unternehmen(YATAS)</item>
+        <item year="2000">Daten-Migration von einer lokalen Datenbank zum Oracle ERP Software R11.</item>
+        <item year="2000">Warenwirtschaft Software Entwicklung für Mitsubishi Elevators.</item>
+        <item year="2001">Warenwirtschaft Software Entwicklung für Diktas Yarn Company.</item>
+        <item year="2004">DSH Prüfung bestanden.</item>
+    </PersonalAchievements>
+  <CareerDetails>
+    <CareerDetail id="Santander2014" type="Projekt" startedOn="03/2014" finishedOn="04/2016" duration="24M">
+      <Institution caption="Santander Consumer Bank / ISBAN" field="Finanz, Bank" size="1000+ Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Web-Basierte Fahrzeug-Finanzierung Software (Kosyfa)</Summary>
+          <Detail>Finanzmathematische Umsetzung von Leasing und Kredit Anträge(Kalkulation-Kern).</Detail>
+          <Detail>SOAP Schnittstellen zu den Entscheidungssysteme.</Detail>
+          <Detail>Fahrzeugmodell, und Kondition Datenbank.</Detail>
+        </Task>
+        <Task>
+          <Summary>Datenimport-Tool für Captives</Summary>
+          <Detail>Voll-Automatische Fahrzeugmodell und Restwert-Tafel Import von Excel-Dateien.</Detail>
+          <Detail>Interactive AJAX Web Oberfläche mit Apache-Wicket-6 und JQueryUI.</Detail>
+          <Detail>Einsatz von Künstliche Intelligenz für die Excel-Mappen-Analyse.</Detail>
+          <Detail>Deployment auf IBM Websphere 7.0 Application Server</Detail>
+        </Task>
+        <Task>
+          <Summary>Branded OAuth-2 Authentifizierung Server</Summary>
+          <Detail>Vollständige Implementierung von OAuth-2 Spezifikation(RFC6749) für die authentifizierung von externen Anwendungen(als RESTful Jersey Anw.).</Detail>
+          <Detail>Einsatz von Wicket-6 und Bootstrap-2 für das Admin-Tool UI.</Detail>
+          <Detail>Einsatz von JPA 2.0 mit Hybernate(früher EclipseLink) als Provider</Detail>
+          <Detail>Deployment auf IBM Websphere 8.5 Application Server</Detail>
+        </Task>
+        <Task>
+          <Summary>Mobile Dokument Scanner App.</Summary>
+          <Detail>Implementierung von Backend-Side der Anwendung als RESTFul-Service(Jersey Framework).</Detail>
+          <Detail>Bindung an (vorher entwickelte) OAuth Server</Detail>
+          <Detail>Einsatz von JPA 2.0 mit EclipseLink als Provider</Detail>
+          <Detail>Deployment auf IBM Websphere 8.5 Application Server</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="JDK 1.7"/>
+        <Technology caption="Oracle 11" />
+        <Technology caption="IntelliJ 14"/>
+        <Technology caption="Wicket 6"/>
+        <Technology caption="Spring-Frm."/>
+        <Technology caption="IBM WAS"/>
+        <Technology caption="Jetty"/>
+        <Technology caption="Apache POI"/>
+        <Technology caption="PL/SQL"/>
+        <Technology caption="HTML"/>
+        <Technology caption="JQuery"/>
+        <Technology caption="JavaScript"/>
+        <Technology caption="Web-Services"/>
+        <Technology caption="RESTful, JSON"/>
+        <Technology caption="Maven"/>      
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="Progsan2103" type="Projekt" startedOn="03/2013" finishedOn="07/2013" duration="4M">
+      <Institution caption="Progsan Software" field="Software/HR" size="1-10 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Entwicklung einer Web basierten Lebenslauf-Erstellungstool.</Summary>
+          <Detail>Research, Design, Entwicklung eines Lebenslauf-Erstellungstools.</Detail>
+          <Detail>Automasierte Test Verfahren.</Detail>     
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="IntelliJ 14"/>
+        <Technology caption="JDK 1.7"/>
+        <Technology caption="MySQL 5.5"/>
+        <Technology caption="HTML" />
+        <Technology caption="XML"/>
+        <Technology caption="XSLT"/>
+        <Technology caption="XSL/FO"/>
+        <Technology caption="Apache Fop"/>
+        <Technology caption="Jetty"/>
+        <Technology caption="JavaScript"/>
+        <Technology caption="JQuery"/>
+      </Technologies>
+    </CareerDetail>    
+    <CareerDetail id="cas2012" type="Projekt" startedOn="01/2012" finishedOn="01/2013" duration="12M">
+      <Institution caption="CAS AG" field="Finanz/Automobil" size="100-500 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Mitarbeit an Daimler/Mercedes-Benz LKW Vertrieb Software(MBKS).</Summary>
+          <Detail>Research, Design, Entwicklung und automasierte Testen des Leasing-Bausteins von Daimler/Mercedes-Benz-Charterway-Projekt in Delphi 2009 und SQLite. Trotz erhebliche finanztechnische Komplexität, konnte ich meinen Teil fehlerfrei und vorzeitig liefern.</Detail>
+          <Detail>Modernizierung des veralteten UI Designs und CodeBases.</Detail>
+          <Detail>Entwicklung von vielen neuen Komponenten für die Modernizierung.</Detail>
+          <Detail>Entwicklung von Code-Generatoren.Umsetzung erfolgte in C#.NET 4.0.</Detail>
+          <!--
+          <Detail>Entwurf von vielen neuen Icons für die UI-Modernizierung mit Gimp.</Detail>
+          -->
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 2007"/>
+        <Technology caption="Visual Studio"/>
+        <Technology caption="C#.NET 4.0"/>
+        <Technology caption="WinAPI" />
+        <Technology caption="SQLite"/>
+        <Technology caption="XML"/>
+        <Technology caption="XSLT"/>
+        <Technology caption="Gimp"/>
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="tuneup2011" type="Projekt" startedOn="02/2011" finishedOn="10/2011" duration="8M">
+      <Institution caption="TuneUp" field="Software" size="100-500 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Mitarbeit an TuneUp Utilities 2012</Summary>
+          <Detail>Research, Design, und Entwicklung von Economy-Modus-Module (Highlight für TuneUp-2012). </Detail>
+          <Detail>Translucent Widget Framework Entwicklung für Delphi 2009 um komplexe UI Designs mit Hilfe von Form-Designer zu ermöglichen.</Detail>
+          <Detail>Research, Design, und Entwicklung von einer Power Management Framework für Delphi Umgebung.</Detail>
+          <Detail>Mitarbeit an einer Windows-Service um Power-Management relevante Events zu erweitern.(VC++)</Detail>
+          <Detail>IE Controls wurden durch Chromium Framework ersetzt, um IE Version Abhängigkeitsproblem zu vermeiden.</Detail>
+          <!--
+          <Detail>Bug Fixing und Feature-Entw. an allen Modulen.</Detail>         
+          -->
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 2009"/>
+        <Technology caption="WinAPI" />
+        <Technology caption="XML"/>
+        <Technology caption="HTML"/>
+        <Technology caption="Visual C++"/>
+        <Technology caption="MS-PWM"/>
+        <Technology caption="MS-COM"/>
+        <Technology caption="MS-GDI"/>
+        <Technology caption="MS-Async.Plug.Prot."/>
+        <Technology caption="MS-IE Embed.Brow."/>
+        <Technology caption="Chromium"/>        
+        <Technology caption="XSLT"/>
+        <Technology caption="JavaScript"/>
+        <Technology caption="JQuery"/>        
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="jonasRedmann" type="Projekt" startedOn="12/2008" finishedOn="02/2011 " duration="27M">
+      <Institution caption="Jonas&amp;Redmann" field="Maschinenbau" size="500-1000 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Visualisierung Framework</Summary>
+          <Detail>Analyse, Design und Entwicklung von einem Visualisierung Design &amp; Runtime Framework für die HMI Entw. von Photovoltaik Wafer Produktion Maschinen. Umgesetz durch Delphi-2007. </Detail>
+          <Detail>Das Framework besteht aus mehr als 70  wiederverwendbaren Komponenten, einer Schnittstelle zu PLC  die auf ORM basiert  und Datenbindung unterstütz, und einer integrierten erweiterbaren Design-Umgebung(IDE). Die ORM-Fähigkeit der Datenschnittstelle wird mit einem Code-Generator unterstützt, um jederzeit von PLC Datenstrukturen automatisch  Data-Access-Objects zu generieren. Zugriffe auf PLC erfolgen asynchron, um Verzögerungen zu reduzieren.</Detail>
+          <Detail>Das Framework ersetzt Siemens WinCC / Protool Plattform. </Detail>
+          <Detail>Die User Interface Elemente sind so entworfen, dass sie die Halbtransparenz (Translucent) unterstützen und Touchscreen-fähig sind. Kernfunktionen wie Alpha Blending wurden in Assembler(SIMD: SSE + MMX) geschrieben. </Detail>
+          <Detail>Painting/Drawing und Verarbeitung der Benutzereingabe bei den Eingabe-Komponenten werden von separaten Klassen behandelt, sodass  Corporate Design(Skin-Fähigkeit) und Anpassung möglich wird (Decorator Pattern).</Detail>
+          <Detail>Ein dafür entwickelter Async.-Pluggable-Protocol-Handler-COM-Server erlaubt auf die Ressourcen (wie Bilder, Icons usw.) per URL zuzugreifen. Das ermöglicht deutlich bessere Designtime Emulation und erspart die Ressource laden Komplexitäten während Runtime.</Detail>
+        </Task>
+        <Task>
+          <Summary>Basler Schnittstelle</Summary>
+          <Detail>Design und Leitentwicklung einer Kette von Schnittstellen zwischen  einem optischen Messgerät von Tordivel/Basler, MES-Interface und Steuerung(Twincat) auf .NET Plattform. </Detail>
+          <Detail>Die Kommunikation zwischen den Teilen erfolgt über RPC(.NET Remoting).</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 2007"/>
+        <Technology caption="WinAPI"/>
+        <Technology caption="Visual Studio"/>
+        <Technology caption="C#.NET 2.0"/>
+        <Technology caption="XML"/>
+        <Technology caption="MS-INET"/>
+        <Technology caption="MS-COM"/>
+        <Technology caption="MS-GDI+"/>
+        <Technology caption="MS-Async.Plug.Prot."/>
+        <Technology caption="MS-IE Embed.Brow."/>        
+        <Technology caption="Bildbearbeitung"/>
+        <Technology caption="Type Systems"/>
+        <Technology caption="Assembler+SSE/MMX"/>
+        <Technology caption="XSLT"/>
+        <Technology caption="XSD"/>
+        <Technology caption="DataBinding"/>
+        <Technology caption="ORM"/>
+        <Technology caption=".NET Remoting"/>
+        <Technology caption="Echtzeitsysteme(TwinCAT)"/>        
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="tuneup2008" type="Projekt" startedOn="07/2008" finishedOn="12/2008" duration="6M">
+      <Institution caption="TuneUp" field="Software" size="50-100 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Mitarbeit an TuneUp Utilities 2009</Summary>
+          <Detail>Entwicklung einer Benutzeroberfläche für Performance-Optimizer Module. Umgesetzt in Delphi 2007.</Detail>
+          <Detail>Kommunikation zwischen Embedded HTML User Interface und Win32 (Delphi) Anwendung erfolgt über COM.</Detail>
+          <Detail>Für HTML Codegenerierung wurde XML + XSLT verwendet, um MVC Pattern zu erreichen.</Detail>          
+          <Detail>Translucent UI Entwicklung mit Hilfe HTML+JavaScript.</Detail>
+          <Detail>Bug Fixing und Feature-Entw. an allen Modulen.</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 2007"/>
+        <Technology caption="WinAPI" />
+        <Technology caption="XML"/>
+        <Technology caption="HTML"/>
+        <Technology caption="MS-IE Control"/>
+        <Technology caption="MS-COM"/>
+        <Technology caption="MS-GDI"/>
+        <Technology caption="MS-Async.Plug.Prot."/>
+        <Technology caption="MS-IE Embed.Brow."/>
+        <Technology caption="XSLT"/>
+        <Technology caption="JavaScript"/>
+        <Technology caption="JQuery"/>
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="eisenPartner2008" type="Projekt" startedOn="04/2008" finishedOn="07/2008" duration="3M">
+      <Institution caption="Eisen&amp;Partner" field="Software, Immobilien" size="10-50 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Geo-Daten Interpolation + Unscharfe String Suche für die Adressangaben</Summary>
+          <Detail>Entwicklung von einer auf Oracle-Spatial-API basierten PL/SQL Anwendung für Geo-Daten(Teleatlas) Interpolation (um geographische Position von Hausnummern bei den Adressangaben zu approximieren.)</Detail>
+          <Detail>Umsetzung von Levenshtein-Distanz-Algorithmus (als PLSQL Funktionen) für unscharfe(Fuzzy) String-Suche (um falsch eingetippte Adressangaben zu korrigieren).</Detail>
+          <Detail>Das entwickelte PL/SQL Geo-Daten Framework wurde von unterschiedlichen Immobilien Anwendungen für die Landkartenerstellung und Adresskontrolle verwendet.</Detail>
+        </Task>
+        <Task>
+          <Summary>Web-Anwendungen für Immobilienbranche</Summary>
+          <Detail>Mitarbeit an einer auf Spring-Framework basierten Webanwendung für die Online Kunden.</Detail>
+          <Detail>Entwicklung eines Webservices mit Axis Framework.</Detail>
+          <!--
+          <Detail>Verbesserung der Ästhetik von dem GUI-Design.</Detail>
+          -->
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Java 1.5"/>
+        <Technology caption="Oracle 10" />
+        <Technology caption="Eclipse 3.3"/>
+        <Technology caption="HTML"/>
+        <Technology caption="TOAD"/>
+        <Technology caption="PL/SQL"/>
+        <Technology caption="GeoCoding"/>
+        <Technology caption="TeleAtlas-DB"/>
+        <Technology caption="Oracle Spatial API"/>
+        <Technology caption="Axis-2"/>
+        <Technology caption="Spring"/>
+        <Technology caption="JSP"/>
+        <Technology caption="Web-Services"/>
+        <Technology caption="Tomcat 5.5"/>
+        <Technology caption="Ant"/>
+        <Technology caption="XML"/>
+        <Technology caption="HTML"/>
+        <Technology caption="JavaScript"/>        
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="debitel2008" type="Projekt" startedOn="01/2008" finishedOn="02/2008" duration="2M">
+      <Institution caption="Debitel/dug Telekom" field="Telekom" size="500-1000 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Warenwirtschaft Anpassung</Summary>
+          <Detail>Erweiterung eines SimKart Aktivierungssystems, Opt. / Norm. des vorhandenen Daten-Modells.</Detail>
+          <Detail>Entwicklung eines auf XML basierten Protokoll-Clients (als Delphi Dataset). </Detail>
+          <Detail>Entwicklung eines auf XML/XSLT basierten Webanwendung-Prototyps für SimKart-Aktivierung-Frontend(mit Hilfe eigenes HTML Form Designer Frameworks).</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 7"/>
+        <Technology caption="Oracle 10" />
+        <Technology caption="Firebird"/>
+        <Technology caption="Tomcat 5"/>
+        <Technology caption="XML"/>
+        <Technology caption="XSLT"/>
+        <Technology caption="HTML"/>
+        <Technology caption="SQL"/>
+        <Technology caption="Warenwirtschaft"/>
+        <Technology caption="MSXML-API"/>
+        <Technology caption="JavaScript"/>
+        <Technology caption="(Eigene) HTML Form Designer"/>
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="kia2006" type="Projekt" startedOn="01/2006" finishedOn="06/2007" duration="18M">
+      <Institution caption="KIA MOTORS" field="Automobile" size=""/>
+      <Tasks>
+        <Task>
+          <Summary>Warenwirtschaft für Werbung-Zuschuss-Verwaltung</Summary>
+          <Detail>Entwicklung eines webbasierten Werbung-Bestellung &amp; Vergütung Systems, das die Zuschuss-Verwaltung zwischen der Firma und ihren Händlern automatisiert. Umgesetzt in Java.</Detail>
+          <Detail>Entwicklung eines HTML-Form-Designer-Frameworks für die einfachere Erstellung von Eingabemasken.</Detail>
+          <Detail>Entwicklung eines PDF-Report-Designer-Frameworks für die einfachere Erstellung von Ausgabemasken. PDFs werden mit Hilfe von Apache-FOP-Framework generiert.</Detail>
+          <Detail>Entwicklung eines Data-Modelling-Frameworks, das den DDL Code für die Updatable-Views und deren Triggers generiert, um die Objektorientierung auf die Datenbank ebene zu erreichen.</Detail>
+          <Detail>Entwicklung eines Grid-Controls für die Web Masken.</Detail>
+          <Detail>Der größte Teil der Businesslogik wurde in PG/SQL entwickelt, um das Java-Backend zu entlasten.</Detail>
+          <Detail>Erstellung von insgesamt 140 Web (Eingabe/Ausgabe) Masken.</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="JDK 1.4"/>
+        <Technology caption="Eclipse 3.1" />
+        <Technology caption="Tomcat 5"/>
+        <Technology caption="PostgreSQL"/>
+        <Technology caption="Delphi 7"/>
+        <Technology caption="HTML"/>
+        <Technology caption="XML"/>
+        <Technology caption="XSLT"/>
+        <Technology caption="XPath"/>
+        <Technology caption="Hybernate"/>
+        <Technology caption="Servlet"/>
+        <Technology caption="Apache FOP"/>
+        <Technology caption="PDF"/>
+        <Technology caption="JavaScript"/>
+        <Technology caption="ANT"/>
+        <Technology caption="Castor"/>
+        <Technology caption="Warenwirtschaft"/>
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="szp" type="Projekt" startedOn="01/2005" finishedOn="12/2005" duration="12M">
+      <Institution caption="Zauner &amp; Partner" field="Software, Behörden" size="10-50 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Erkennung der Fahrdaten von Ausdrucken digitaler Tachographen </Summary>
+          <Detail>Entwicklung einer kognitiven Software, die Fahrdaten von (gescannten) Ausdrucken erkennt.</Detail>
+          <Detail>Entwicklung eines neuen Rotation- und Skala-freien Pattern-Matching-Algorithmus für den OCR Kern.</Detail>
+          <Detail>Verwendung von BNF-Grammatik für Textverarbeitung.</Detail>
+        </Task>
+        <Task>
+          <Summary>Erkennung der Fahrdaten von den  Tachograph-Scheiben</Summary>
+          <Detail>Entwicklung einer kognitiven Software, die Tacho-Scheiben einscannt und davon die Fahrinformationen erkennt / extrahiert.</Detail>
+          <Detail>Ein spezieller Pattern-Matching-Algorithmus wurde entwickelt, um das gescannte Bild in einzelne Tacho-Scheiben aufzuteilen.</Detail>
+          <Detail>Formulierung von einigen mathematischen Modellen für präzise Kalibrierung.</Detail>
+          <Detail>Entwicklung von einer DLL Module für ERCA Signatur Überprüfung.</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 7"/>
+        <Technology caption="WinAPI" />
+        <Technology caption="Visual C++"/>
+        <Technology caption="Twain API" />
+        <Technology caption="Crypto++ Lib"/>
+        <Technology caption="Bildbearbeitung"/>
+        <Technology caption="Pattern Matching"/>        
+        <Technology caption="Künstliche Intelligenz"/>
+        <Technology caption="Kryptographie(RSA) "/>
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="dijuf" type="Projekt" startedOn="02/2005" finishedOn="04/2005" duration="2M">
+      <Institution caption="DIJuF, DatenKnecht GmbH" field="Software, Behörden" size="10-50 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>Datenmigration</Summary>
+          <Detail>Analysieren / Deschiffrieren interner Datenstruktur von einer „nicht bekannten“ Datenbank.</Detail>
+          <Detail>Entwicklung und eines Tools um die Daten von dieser Datenbank zu einem Firebird Datenbank zu migrieren / retten.</Detail>
+          <Detail>Entwicklung von SQL Prozeduren, welche die Integrität und Plausibilität der migrierten/geretteten Daten überprüfen.</Detail>
+          <Detail>Mitarbeit an Java Backend von neuem DIJuF-Verwaltungsoftware.</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="Delphi 7"/>
+        <Technology caption="Java" />
+        <Technology caption="Eclipse"/>
+        <Technology caption="Firebird" />
+        <Technology caption="JSP"/>
+        <Technology caption="Struts"/>
+        <Technology caption="CSS"/>
+        <Technology caption="JavaScript"/>       
+      </Technologies>
+    </CareerDetail>
+    <CareerDetail id="ltur" type="Projekt" startedOn="01/2003 " finishedOn="01/2004" duration="12M">
+      <Institution caption="LTur, 3w4u GmbH" field="Reiseportal" size="10-50 Mitarbeiter"/>
+      <Tasks>
+        <Task>
+          <Summary>FlyLoco.de Reise Portal</Summary>
+          <Detail>Mitarbeit an einem Reisebüro-Portals, das online Flug- und Hotelbuchung kombiniert.</Detail>
+          <Detail>Entwicklung von Frontend durch JSP, HTML und CSS.</Detail>
+          <Detail>Mitarbeit an Java Backend.</Detail>
+          <Detail>Optimierung der Datenbank.</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>      
+        <Technology caption="Java" />
+        <Technology caption="Eclipse"/>        
+        <Technology caption="JSP"/>
+        <Technology caption="Struts"/>
+        <Technology caption="MySQL" />
+        <Technology caption="HTML"/>
+        <Technology caption="CSS"/>
+        <Technology caption="JavaScript"/>
+      </Technologies>
+    </CareerDetail>
+  </CareerDetails>
+  <EducationalBackground>
+    <Education type="Uni" date="2000" field="Computer &amp; Electronics (Englisch)">Marmara Unv.</Education>
+    <Education type="Uni" date="1995" field="English Preparing School">Marmara Unv.</Education>
+    <!--Education type="Uni" date="1994" field="Computer &amp; Electronics">Gazi Unv.</Education-->
+    <Education type="HighSchool" date="1992" field="Computer &amp; Electronics">Berufsschule</Education>
+  </EducationalBackground>
+  <Certificates>
+    <Certificate id="orclSQL" issueDate="Jun 2011" icon="images/CERT.ORCL.png">Oracle Database SQL Certified Expert</Certificate>
+    <Certificate id="ISTQB"   issueDate="Sep2010"  icon="images/ISTQB.png">ISTQB Certified Tester Foundation Level</Certificate>
+  </Certificates>
+  <Screenshots>
+    <Screenshot id="SC1" image="images/screenshots/image008.png">Windows Power Management Toolkit</Screenshot>
+    <Screenshot id="SC2" image="images/screenshots/TuneUp_PerfOpt2011.png">TuneUp Performance-Optimizer-Module Benutzeroberfläche</Screenshot>
+    <Screenshot id="SC3" image="images/screenshots/sc_servo_new_loading.png">Ein HMI Prototyp für Visu-Design-Framework</Screenshot>
+    <Screenshot id="SC4" image="images/screenshots/TuneUp Eco-Modus.png">Von mir entwickelte Economy-Modus von TuneUp Utilities</Screenshot>    
+    <Screenshot id="SC5" image="images/screenshots/SC004.gif">Erkennung der Fahrdaten von einer Tachograph-Scheibe</Screenshot>
+    <Screenshot id="SC6" image="images/screenshots/SC005.gif">HTML Eingabemasken Designer</Screenshot>
+    <Screenshot id="SC7" image="images/screenshots/SC006.gif">PDF Report Preview / PDF Report Designer</Screenshot>
+    <Screenshot id="SC8" image="images/screenshots/Eclipse SWT Form Designer Plugin.png">Eclipse SWT Form Designer Plugin(ein Forschungsprojekt)</Screenshot>     
+  </Screenshots>
+</Resume>

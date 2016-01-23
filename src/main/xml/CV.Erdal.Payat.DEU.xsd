@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Resume" type="ResumeType"/>
+  <xs:complexType name="SkillType">
+    <xs:sequence>
+      <xs:element type="NameType" name="Name"/>
+      <xs:element type="IconType" name="Icon"/>
+      <xs:element type="DetailsType" name="Details"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="SkillsType">
+    <xs:sequence>
+      <xs:element type="SkillGroupType" name="SkillGroup" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DetailsType">
+    <xs:sequence>
+      <xs:element type="DetailType" name="Detail" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IconType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="url" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InterestsType">
+    <xs:sequence>
+      <xs:element name="Interest" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Naturwissenschaften"/>
+            <xs:enumeration value="Politik / Wirtschaft"/>
+            <xs:enumeration value="Psychologie"/>
+            <xs:enumeration value="Philosophie"/>
+            <xs:enumeration value="PC Hardware/Overclocking/Modding"/>
+            <xs:enumeration value="Schwimmen"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EducationalBackgroundType">
+    <xs:sequence>
+      <xs:element type="EducationType" name="Education" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TechnologiesType">
+    <xs:sequence>
+      <xs:element type="TechnologyType" name="Technology" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SalaryExpectationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attribute type="xs:string" name="currency"/>
+        <xs:attribute type="xs:string" name="per"/>
+        <xs:attribute type="xs:string" name="kind"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PhotoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="url"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TasksType">
+    <xs:sequence>
+      <xs:element type="TaskType" name="Task" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ScreenshotsType">
+    <xs:sequence>
+      <xs:element type="ScreenshotType" name="Screenshot" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ResumeType">
+    <xs:sequence>
+      <xs:element type="PersonalType" name="Personal"/>
+      <xs:element type="SkillsType" name="Skills"/>
+      <xs:element type="FieldsType" name="Fields"/>
+      <xs:element type="PersonalDataSheetType" name="PersonalDataSheet"/>
+      <xs:element type="LanguagesType" name="Languages"/>
+      <xs:element type="CareerDetailsType" name="CareerDetails"/>
+      <xs:element type="EducationalBackgroundType" name="EducationalBackground"/>
+      <xs:element type="CertificatesType" name="Certificates"/>
+      <xs:element type="ScreenshotsType" name="Screenshots"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="language"/>
+    <xs:attribute type="xs:string" name="anonym"/>
+    <xs:attribute type="xs:string" name="anonymId"/>
+    <xs:attribute type="xs:string" name="recruiterName"/>
+    <xs:attribute type="xs:string" name="recruiterEmail"/>
+  </xs:complexType>
+  <xs:complexType name="ItemType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="startedOn" use="optional"/>
+        <xs:attribute type="xs:string" name="endedOn" use="optional"/>
+        <xs:attribute type="xs:string" name="formOfEmp" use="optional"/>
+        <xs:attribute type="xs:string" name="instLogo" use="optional"/>
+        <xs:attribute type="xs:string" name="instName" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="WeightType">
+    <xs:simpleContent>
+      <xs:extension base="xs:byte">
+        <xs:attribute type="xs:string" name="unit"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ScreenshotType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+        <xs:attribute type="xs:string" name="image" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SkillGroupType">
+    <xs:sequence>
+      <xs:element type="SkillType" name="Skill" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id" use="optional"/>
+    <xs:attribute type="xs:string" name="caption" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="DetailType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PersonalDataSheetType">
+    <xs:sequence>
+      <xs:element type="ItemType" name="Item" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CareerDetailsType">
+    <xs:sequence>
+      <xs:element type="CareerDetailType" name="CareerDetail" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NameType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Text"/>
+      <xs:element type="IconType" name="Icon" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CertificatesType">
+    <xs:sequence>
+      <xs:element type="CertificateType" name="Certificate" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TechnologyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="caption" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PersonalType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="FirstName"/>
+      <xs:element type="xs:string" name="LastName"/>
+      <xs:element type="xs:string" name="Career"/>
+      <xs:element type="xs:string" name="Phone"/>
+      <xs:element type="xs:string" name="Email"/>
+      <xs:element type="AddressType" name="Address"/>
+      <xs:element type="PhotoType" name="Photo">
+        <xs:annotation>
+          <xs:documentation>Photo url="images/Photo.png"/</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="xs:string" name="MaritalStatus"/>
+      <xs:element type="xs:string" name="Birthdate"/>
+      <xs:element type="WeightType" name="Weight"/>
+      <xs:element type="HeightType" name="Height"/>
+      <xs:element type="InterestsType" name="Interests"/>
+      <xs:element type="SalaryExpectationType" name="SalaryExpectation"/>
+      <xs:element type="xs:string" name="EarlyStartDate"/>
+      <xs:element type="xs:string" name="DriversLicence"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EducationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+        <xs:attribute type="xs:short" name="date" use="optional"/>
+        <xs:attribute type="xs:string" name="field" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LanguagesType">
+    <xs:sequence>
+      <xs:element type="LanguageType" name="Language" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CareerDetailType">
+    <xs:sequence>
+      <xs:element type="InstitutionType" name="Institution"/>
+      <xs:element type="TasksType" name="Tasks"/>
+      <xs:element type="TechnologiesType" name="Technologies"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+    <xs:attribute type="xs:string" name="startedOn" use="optional"/>
+    <xs:attribute type="xs:string" name="finishedOn" use="optional"/>
+    <xs:attribute type="xs:string" name="duration" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="LanguageType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+        <xs:attribute type="xs:byte" name="level" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Street"/>
+      <xs:element type="xs:int" name="PostalCode"/>
+      <xs:element type="xs:string" name="City"/>
+      <xs:element type="xs:string" name="Country"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InstitutionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="caption" use="optional"/>
+        <xs:attribute type="xs:string" name="field" use="optional"/>
+        <xs:attribute type="xs:string" name="size" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CertificateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+        <xs:attribute type="xs:string" name="issueDate" use="optional"/>
+        <xs:attribute type="xs:string" name="icon" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="FieldsType">
+    <xs:sequence>
+      <xs:element name="Field" maxOccurs="unbounded" minOccurs="0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaskType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Summary"/>
+      <xs:element type="xs:string" name="Detail" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeightType">
+    <xs:simpleContent>
+      <xs:extension base="xs:short">
+        <xs:attribute type="xs:string" name="unit"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

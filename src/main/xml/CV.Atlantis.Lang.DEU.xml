@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Translations>
+  <Translation id="skillsHeader">Fachkenntnisse</Translation>
+  <Translation id="fieldsHeader">Fachbereiche</Translation>
+  <Translation id="persDataSheetHdr">Lebenslauf</Translation>
+  <Translation id="birthDate">geboren am</Translation>  
+  <Translation id="languageSkills">Sprachkenntnisse</Translation>
+  <Translation id="personalInfo">Zur Person</Translation>
+  <Translation id="interests">Interessen</Translation>
+  <Translation id="DEU">Deutsch</Translation>
+  <Translation id="ENU">Englisch</Translation>
+  <Translation id="TRK">Türkisch</Translation>
+  <Translation id="POL">Polnisch</Translation>
+  <Translation id="fieldCaption">Branche</Translation>
+  <Translation id="education">Ausbildung</Translation>
+  <Translation id="page">Seite</Translation>
+  <Translation id=""></Translation>
+  <Translation id=""></Translation>
+  <Translation id=""></Translation>
+</Translations>

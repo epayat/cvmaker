@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Translations>
+  <Translation id="skillsHeader">Skills</Translation>
+  <Translation id="fieldsHeader">Fields</Translation>
+  <Translation id="persDataSheetHdr">Data Sheet</Translation>
+  <Translation id="birthDate">born on</Translation>
+  <Translation id="languageSkills">Language Skills</Translation>
+  <Translation id="personalInfo">Personal Info</Translation>
+  <Translation id="interests">Interests/Hobbies</Translation>
+  <Translation id="DEU">German</Translation>
+  <Translation id="ENU">English</Translation>
+  <Translation id="TRK">Turkish</Translation>
+  <Translation id="POL">Polish</Translation>
+  <Translation id="fieldCaption">Industry</Translation>
+  <Translation id="education">Education</Translation>
+  <Translation id="page">Page</Translation>
+  <Translation id=""></Translation>
+  <Translation id=""></Translation>
+  <Translation id=""></Translation>
+</Translations>
