@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Companies>
+    <Company id="SCB" nofWorkers="100000+" industryId="finance" defaultIconId="scb-def">
+        <Name>Santander Consumer Bank</Name>
+        <Icons>
+            <Icon id="scb-def"/>
+        </Icons>
+    </Company>
+    <Company id="progsan" nofWorkers="1-10" industryId="software" defaultIconId="progsan-def">
+        <Name>Progsan Software</Name>
+        <Icons>
+            <Icon id="progsan-def"/>
+        </Icons>
+    </Company>
+    <Company id="cas" nofWorkers="100-1000" industryId="finance" defaultIconId="cas-def">
+        <Name>CAS AG, Daimler AG</Name>
+        <Icons>
+            <Icon id="cas-def"/>
+        </Icons>
+    </Company>
+    <Company id="tuneup" nofWorkers="100-1000" industryId="software" defaultIconId="tuneup-def">
+        <Name>TuneUp Utilities</Name>
+        <Icons>
+            <Icon id="tuneup-def"/>
+        </Icons>
+    </Company>
+    <Company id="jonas" nofWorkers="100-1000" industryId="software" defaultIconId="jonas-def">
+        <Name>Jonas&amp;Redmann</Name>
+        <Icons>
+            <Icon id="jonas-def"/>
+        </Icons>
+    </Company>
+    <Company id="eisenPartner" nofWorkers="10-100" industryId="software" defaultIconId="eisenPartner-def">
+        <Name>Eisen&amp;Partner</Name>
+        <Icons>
+            <Icon id="eisenPartner-def"/>
+        </Icons>
+    </Company>
+    <Company id="debitel" nofWorkers="100-1000" industryId="telecom" defaultIconId="debitel-def">
+        <Name>Debitel/dug Telekom</Name>
+        <Icons>
+            <Icon id="debitel-def"/>
+        </Icons>
+    </Company>
+    <Company id="kia" nofWorkers="1000+" industryId="automobile" defaultIconId="kia-def">
+        <Name>KIA MOTORS</Name>
+        <Icons>
+            <Icon id="kia-def"/>
+        </Icons>
+    </Company>
+    <Company id="szp" nofWorkers="1000+" industryId="software" defaultIconId="szp-def">
+        <Name>Zauner &amp; Partner</Name>
+        <Icons>
+            <Icon id="szp-def"/>
+        </Icons>
+    </Company>
+    <Company id="szp" nofWorkers="1000+" industryId="software" defaultIconId="szp-def">
+        <Name>Zauner &amp; Partner</Name>
+        <Icons>
+            <Icon id="szp-def"/>
+        </Icons>
+    </Company>
+    <Company id="dijuf" nofWorkers="100+" industryId="software" defaultIconId="datenknecht-def">
+        <Name>DIJuF, DatenKnecht GmbH</Name>
+        <Icons>
+            <Icon id="datenknecht-def"/>
+        </Icons>
+    </Company>
+    <Company id="ltur" nofWorkers="1000+" industryId="tour operator" defaultIconId="ltur-def">
+        <Name>LTur, 3w4u GmbH</Name>
+        <Icons>
+            <Icon id="ltur-def"/>
+        </Icons>
+    </Company>
+</Companies>

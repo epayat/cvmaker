@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Industries>
+    <Industry id="finance"/>
+    <Industry id="software"/>
+    <Industry id="automobile"/>
+    <Industry id="telecom"/>
+    <Industry id="tour operator"/>
+</Industries>

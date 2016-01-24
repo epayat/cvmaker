@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Icons>
+    <Icon id="scb-def" group="company">images/logo-santander.png</Icon>
+    <Icon id="progsan-def" group="company">images/Progsan-Logo-Vert.png</Icon>
+    <Icon id="cas-def" group="company">images/CAS_Daimler.png</Icon>
+    <Icon id="tuneup-def" group="company">images/TuneUp.png</Icon>
+    <Icon id="jonas-def" group="company">images/JonasRedmann.png</Icon>
+    <Icon id="eisenpartner-def" group="company">images/eisen-partner-logo.png</Icon>
+    <Icon id="debitel-def" group="company">images/Debitel.png</Icon>
+    <Icon id="kia-def" group="company">images/Kia_MotorsH.png</Icon>
+    <Icon id="szp-def" group="company">images/ZaunerPartner.png</Icon>
+    <Icon id="ltur-def" group="company">images/LTur.png</Icon>
+    <Icon id="datenknecht-def" group="company">images/datenknecht.png</Icon>
+
+    <Icon id="vhs-def" group="institution">images/VHS.png</Icon>
+    <Icon id="marmara-def" group="institution">images/MarmaraUnv.png</Icon>
+    <Icon id="marmara-def" group="institution">images/mehmet akif ersoy end.meslek.lisesi.logo.png</Icon>
+
+    <Icon id="java-def" group="tech">images/Win7JavaLibrary.png</Icon>
+    <Icon id="wicket-def" group="tech">images/apache_wicket.png</Icon>
+    <Icon id="spring-def" group="tech">images/spring.png</Icon>
+    <Icon id="intellij-def" group="tech">images/intellij_icon.png</Icon>
+    <Icon id="eclipse-def" group="tech">images/Eclipse.png</Icon>
+    <Icon id="oracle-def" group="tech">images/Oracle.png</Icon>
+    <Icon id="mssql-def" group="tech">images/SqlServer.png</Icon>
+    <Icon id="mysql-def" group="tech">images/MySQL.png</Icon>
+    <Icon id="sqlite-def" group="tech">images/SQLite.png</Icon>
+    <Icon id="postgres-def" group="tech">images/postgres.png</Icon>
+    <Icon id="was-def" group="tech">images/WebSphere.png"</Icon>
+    <Icon id="tomcat-def" group="tech">images/tomcat.png</Icon>
+    <Icon id="jersey-def" group="tech">images/Jersey.png</Icon>
+    <Icon id="maven-def" group="tech">images/Maven.png</Icon>
+    <Icon id="oltu-def" group="tech">images/OLTU.png</Icon>
+    <Icon id="fop-def" group="tech">images/fop.png</Icon>
+    <Icon id="html-def" group="tech">images/HTML.png</Icon>
+    <Icon id="css-def" group="tech">images/CSS.png</Icon>
+    <Icon id="jquery-def" group="tech">images/JQuery.png</Icon>
+    <Icon id="xml-def" group="tech">images/XML.png</Icon>
+    <Icon id="xsd-def" group="tech">images/XSD.png</Icon>
+    <Icon id="xsl-def" group="tech">images/XSL.png</Icon>
+    <Icon id="git-def" group="tech">images/GIT.png</Icon>
+    <Icon id="svn-def" group="tech">images/SVN.png</Icon>
+    <Icon id="delphi-def" group="tech">images/Win7DelphiLibrary.png</Icon>
+    <Icon id="net-def" group="tech">images/Microsoft_NET_Icon.png</Icon>
+    <Icon id="mvs-9" group="tech">images/Win7MVS9Library.png</Icon>
+    <Icon id="mvs-10" group="tech">images/Win7MVS10Library.ico</Icon>
+    <Icon id="winapi-def" group="tech">images/windows-icon.png</Icon>
+    <Icon id="gimp-def" group="tech">GIMP.png</Icon>
+</Icons>
