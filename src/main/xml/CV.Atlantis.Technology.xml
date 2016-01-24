@@ -46,11 +46,25 @@
             <Version id="Oracle-10">Oracle-10</Version>
         </Versions>
     </Technology>
+    <Technology id="SQL Server" type="database">
+        <Icon>images/SqlServer.png</Icon>
+        <Versions>
+            <Version id="SQL Server-2008">SQL Server-2008</Version>
+            <Version id="SQL Server-2000">SQL Server-2000</Version>
+            <Version id="SQL Server-7">SQL Server-7</Version>
+        </Versions>
+    </Technology>
     <Technology id="MySQL" type="database">
         <Icon>images/MySQL.png</Icon>
         <Versions>
             <Version id="MySQL-5.5">MySQL-5.5</Version>
             <Version id="MySQL-5.0">MySQL-5.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="SQLite" type="database">
+        <Icon>images/SQLite.png</Icon>
+        <Versions>
+            <Version id="SQLite-3.X">SQLite-3.X</Version>
         </Versions>
     </Technology>
     <Technology id="WAS" type="servlet container" parent="Java">
@@ -60,4 +74,176 @@
             <Version id="WAS-7">WebSphere-7.0</Version>
         </Versions>
     </Technology>
+    <Technology id="Jetty" type="servlet container" parent="Java">
+        <Versions>
+            <Version id="Jetty-8">Jetty-8.X</Version>
+            <Version id="Jetty-7">Jetty-7.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Tomcat" type="servlet container" parent="Java">
+        <Icon>images/tomcat.png</Icon>
+        <Versions>
+            <Version id="Tomcat-5.6">Tomcat-5.5</Version>
+            <Version id="Tomcat-6.0">Tomcat-6.0</Version>
+            <Version id="Tomcat-7.0">Tomcat-7.0</Version>
+            <Version id="Tomcat-8.0">Tomcat-8.0</Version>
+            <Version id="Tomcat-9.0">Tomcat-9.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="POI" type="framework" parent="Java">
+        <Versions>
+            <Version id="POI-3">Apache POI-3.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Jersey" type="framework" parent="Java">
+        <Icon>images/Jersey.png</Icon>
+        <Versions>
+            <Version id="Jersey-1.X">Jersey-1.X</Version>
+            <Version id="Jersey-2.X">Jersey-2.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Maven" type="framework" parent="Java">
+        <Icon>images/Maven.png</Icon>
+        <Versions>
+            <Version id="Maven-2.X">Maven-1.X</Version>
+            <Version id="Maven-3.X">Maven-2.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Ant" type="framework" parent="Java"></Technology>
+    <Technology id="Castor" type="framework" parent="Java"></Technology>
+
+    <Technology id="OLTU" type="framework" parent="Java">
+        <Icon>images/OLTU.png</Icon>
+        <Versions>
+            <Version id="OLTU-1.X">Apache OLTU-1.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="FOP" type="framework" parent="Java">
+        <Icon>images/fop.png</Icon>
+        <Versions>
+            <Version id="FOP-1.0">Apache FOP-1.0</Version>
+            <Version id="FOP-2.0">Apache FOP-2.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="PLSQL" type="sql" parent="Oracle"></Technology>
+    <Technology id="SpatialAPI" type="api" parent="Oracle"></Technology>
+    <Technology id="TransactSQL" type="sql" parent="SQL Server"></Technology>
+
+
+    <Technology id="HTML" type="markup">
+        <Icon>images/HTML.png</Icon>
+        <Versions>
+            <Version id="HTML-4">HTML-4.01</Version>
+            <Version id="HTML-5">HTML-5</Version>
+        </Versions>
+    </Technology>
+    <Technology id="CSS" type="markup" parent="HTML">
+        <Icon>images/CSS.png</Icon>
+        <Versions>
+            <Version id="CSS-2">CSS-2</Version>
+            <Version id="CSS-3">CSS-3</Version>
+        </Versions>
+    </Technology>
+    <Technology id="JavaScript" type="markup" parent="HTML"></Technology>
+    <Technology id="JQuery" type="markup" parent="JavaScript">
+        <Icon>images/JQuery.png</Icon>
+        <Versions>
+            <Version id="JQuery-1.X">JQuery-1.X</Version>
+            <Version id="JQuery-2.X">JQuery-2.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="XML" type="markup">
+        <Icon>images/XML.png</Icon>
+        <Versions>
+            <Version id="XML-1.0">XML-1.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="XSD" type="markup" parent="XML">
+        <Icon>images/XSD.png</Icon>
+        <Versions>
+            <Version id="XSD-1.1">XSD-1.1</Version>
+        </Versions>
+    </Technology>
+    <Technology id="XSLT" type="markup" parent="XML">
+        <Icon>images/XSL.png</Icon>
+        <Versions>
+            <Version id="XSLT-1.0">XSLT-1.0</Version>
+            <Version id="XSLT-2.0">XSLT-2.0</Version>
+            <Version id="XSLT-3.0">XSLT-3.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="XSL-FO" type="markup" parent="XML">
+        <Versions>
+            <Version id="XSL-FO-1.0">XSL-FO-1.0</Version>
+            <Version id="XSL-FO-1.1">XSL-FO-1.1</Version>
+        </Versions>
+    </Technology>
+
+    <Technology id="GIT" type="version-control">
+        <Icon>images/GIT.png</Icon>
+        <Versions>
+            <Version id="GIT-2.X">GIT-2.X</Version>
+        </Versions>
+    </Technology>
+    <Technology id="SVN" type="version-control">
+        <Icon>images/SVN.png</Icon>
+    </Technology>
+    <Technology id="Delphi" type="platform">
+        <Icon>images/Win7DelphiLibrary.png</Icon>
+        <Versions>
+            <Version id="Delphi 2007">Delphi 2007</Version>
+            <Version id="Delphi XE-2">Delphi XE-2</Version>
+            <Version id="Delphi XE-6">Delphi XE-6</Version>
+        </Versions>
+    </Technology>
+
+    <Technology id=".NET" type="platform">
+        <Icon>images/Microsoft_NET_Icon.png</Icon>
+        <Versions>
+            <Version id=".NET 4.5">.NET 4.5</Version>
+            <Version id=".NET 4.0">.NET 4.0</Version>
+            <Version id=".NET 3.5">.NET 3.5</Version>
+            <Version id=".NET 3.0">.NET 3.0</Version>
+            <Version id=".NET 2.0">.NET 2.0</Version>
+            <Version id=".NET 1.1">.NET 1.1</Version>
+            <Version id=".NET 1.0">.NET 1.0</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Visual Studio" type="IDE" parent=".NET">
+        <Icon>Win7MVS9Library.png</Icon>
+        <Versions>
+            <Version id="Visual Studio-9">
+                <Icon>Win7MVS9Library.png</Icon>
+            </Version>
+            <Version id="Visual Studio-10">
+                <Icon>Win7MVS10Library.ico</Icon>
+            </Version>
+        </Versions>
+    </Technology>
+
+    <Technology id="WinAPI" type="platform">
+        <Icon>images/windows-icon.png</Icon>
+    </Technology>
+    <Technology id="MS-PWM" type="api" parent="WinAPI"/>
+    <Technology id="MS-COM" type="api" parent="WinAPI"/>
+    <Technology id="MS-GDI" type="api" parent="WinAPI"/>
+    <Technology id="MS-GDI+" type="api" parent="WinAPI"/>
+    <Technology id="MS-INET" type="api" parent="WinAPI"/>
+    <Technology id="MS-IE" type="api" parent="WinAPI"/>
+    <Technology id="Chromium" type="api" parent="WinAPI"/>
+    <Technology id="MMX" type="api" parent="WinAPI"/>
+    <Technology id="SSE" type="api" parent="WinAPI"/>
+    <Technology id="Twain" type="api" parent="WinAPI"/>
+    <Technology id="Crypto++" type="framework" parent="WinAPI"/>
+
+    <Technology id="Gimp" type="image-processing">
+        <Icon>GIMP.png</Icon>
+        <Versions>
+            <Version id="Gimp 2.6">Gimp 2.6</Version>
+            <Version id="Gimp 2.7">Gimp 2.7</Version>
+            <Version id="Gimp 2.8">Gimp 2.8</Version>
+        </Versions>
+    </Technology>
+    <Technology id="Twincat" type="real-time"></Technology>
+
 </Technologies>
