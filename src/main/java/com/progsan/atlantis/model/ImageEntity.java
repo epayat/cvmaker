@@ -6,7 +6,7 @@ import java.sql.Timestamp;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "Image", schema = "", catalog = "")
+@javax.persistence.Table(name = "Image")
 public class ImageEntity {
     private Integer imageId;
 
@@ -22,11 +22,6 @@ public class ImageEntity {
 
     private String fileName;
 
-    @javax.persistence.Basic
-    @javax.persistence.Column(name = "fileName", nullable = false, length = 255)
-    public String getFileName() {
-        return fileName;
-    }
 
 
 

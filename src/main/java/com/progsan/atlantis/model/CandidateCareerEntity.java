@@ -6,7 +6,7 @@ import java.sql.Timestamp;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "CandidateCareer", schema = "", catalog = "")
+@javax.persistence.Table(name = "CandidateCareer")
 public class CandidateCareerEntity {
     private int id;
 

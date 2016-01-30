@@ -3,7 +3,9 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
+
     <persistence-unit name="atlantis">
+
         <class>com.progsan.atlantis.model.AddressEntity</class>
         <class>com.progsan.atlantis.model.CandidateCareerEntity</class>
         <class>com.progsan.atlantis.model.CandidateCareerTaskDetailEntity</class>
@@ -21,5 +23,12 @@
         <class>com.progsan.atlantis.model.LanguageEntity</class>
         <class>com.progsan.atlantis.model.TechnologyEntity</class>
         <class>com.progsan.atlantis.model.TechnologyVersionEntity</class>
+        <class>com.progsan.atlantis.model.CandidatecareertechEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/cvmaker"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="7Laruba4"/>
+        </properties>
     </persistence-unit>
 </persistence>

@@ -8,7 +8,7 @@ import java.util.List;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "Candidate", schema = "", catalog = "")
+@javax.persistence.Table(name = "Candidate")
 public class CandidateEntity {
     private Integer candidateId;
 

@@ -6,7 +6,7 @@ import java.util.Collection;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "Technology", schema = "", catalog = "")
+@javax.persistence.Table(name = "Technology")
 public class TechnologyEntity {
     private String code;
 

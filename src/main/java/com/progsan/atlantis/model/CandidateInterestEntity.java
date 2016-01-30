@@ -4,7 +4,7 @@ package com.progsan.atlantis.model;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "CandidateInterest", schema = "", catalog = "")
+@javax.persistence.Table(name = "CandidateInterest")
 public class CandidateInterestEntity {
     private Integer id;
 

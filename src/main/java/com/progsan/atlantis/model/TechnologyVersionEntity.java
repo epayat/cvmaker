@@ -4,7 +4,7 @@ package com.progsan.atlantis.model;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "TechnologyVersion", schema = "", catalog = "")
+@javax.persistence.Table(name = "TechnologyVersion")
 public class TechnologyVersionEntity {
     private String verCode;
 

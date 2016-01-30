@@ -4,7 +4,7 @@ package com.progsan.atlantis.model;
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "Language", schema = "", catalog = "")
+@javax.persistence.Table(name = "Language")
 public class LanguageEntity {
     private String lang;
 
