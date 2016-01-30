@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Candidates>
+    <Candidate>
+        <Id>0</Id>
+        <Personal>
+            <FirstName>Erdal</FirstName>
+            <LastName>Payat</LastName>
+            <Career>Analyst-Programmierer</Career>
+            <Phone>+49 173 454 01 82</Phone>
+            <Email>epayat@gmail.com</Email>s
+            <Address>
+                <Street>Stangenbrunnengasse7</Street>
+                <PostalCode>67433</PostalCode>
+                <City>Neustadt/Weinstraße</City>
+                <Country>DE</Country>
+            </Address>
+            <!--Photo url="images/Photo.png"/-->
+            <Photo url="images/PASS_FOTO.png"/>
+            <MaritalStatus>Single</MaritalStatus>
+            <Birthdate>03.05.1975</Birthdate>
+            <Weight unit="kg">78</Weight>
+            <Height unit="cm">182</Height>
+            <Interests>
+                <Interest>Naturwissenschaften</Interest>
+                <Interest>Politik / Wirtschaft</Interest>
+                <Interest>Psychologie</Interest>
+                <Interest>Philosophie</Interest>
+                <Interest>PC Hardware/Overclocking/Modding</Interest>
+                <Interest>Schwimmen</Interest>
+            </Interests>
+            <SalaryExpectation currency="€" per="year" kind="brut">75.000</SalaryExpectation>
+            <EarlyStartDate>Ab sofort</EarlyStartDate>
+            <DriversLicence>A</DriversLicence>
+        </Personal>
+    </Candidate>
+</Candidates>

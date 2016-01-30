@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="atlantis">
+        <class>com.progsan.atlantis.model.AddressEntity</class>
+        <class>com.progsan.atlantis.model.CandidateCareerEntity</class>
+        <class>com.progsan.atlantis.model.CandidateCareerTaskDetailEntity</class>
+        <class>com.progsan.atlantis.model.CandidateCareerTaskEntity</class>
+        <class>com.progsan.atlantis.model.CandidateEntity</class>
+        <class>com.progsan.atlantis.model.CandidateInterestEntity</class>
+        <class>com.progsan.atlantis.model.CandidateLanguageEntity</class>
+        <class>com.progsan.atlantis.model.CandidateSkillEntity</class>
+        <class>com.progsan.atlantis.model.CompanyEntity</class>
+        <class>com.progsan.atlantis.model.CompanyIndustryEntity</class>
+        <class>com.progsan.atlantis.model.CompanyLogoEntity</class>
+        <class>com.progsan.atlantis.model.ImageEntity</class>
+        <class>com.progsan.atlantis.model.IndustryEntity</class>
+        <class>com.progsan.atlantis.model.InterestEntity</class>
+        <class>com.progsan.atlantis.model.LanguageEntity</class>
+        <class>com.progsan.atlantis.model.TechnologyEntity</class>
+        <class>com.progsan.atlantis.model.TechnologyVersionEntity</class>
+    </persistence-unit>
+</persistence>
