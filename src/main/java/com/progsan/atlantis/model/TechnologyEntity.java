@@ -1,17 +1,27 @@
 package com.progsan.atlantis.model;
 
+import javax.persistence.*;
 import java.util.Collection;
 
 /**
  * Created by Erdal on 30.01.2016.
  */
-@javax.persistence.Entity
-@javax.persistence.Table(name = "Technology")
+@Entity
+@Table(name = "Technology", schema = "", catalog = "")
 public class TechnologyEntity {
     private String code;
+    private String fullname;
+    private String type;
+    private Integer version;
+    private ImageEntity defaultIcon;
+    private ImageEntity logo;
+    private TechnologyEntity parent;
+    private Collection<TechnologyEntity> children;
+    private Collection<TechnologyVersionEntity> versions;
+    private Collection<CandidateCareerTechEntity> careers;
 
-    @javax.persistence.Id
-    @javax.persistence.Column(name = "code", nullable = true, length = 32)
+    @Id
+    @Column(name = "code", nullable = true, length = 32)
     public String getCode() {
         return code;
     }
@@ -20,10 +30,8 @@ public class TechnologyEntity {
         this.code = code;
     }
 
-    private String fullname;
-
-    @javax.persistence.Basic
-    @javax.persistence.Column(name = "fullname", nullable = true, length = 64)
+    @Basic
+    @Column(name = "fullname", nullable = true, length = 64)
     public String getFullname() {
         return fullname;
     }
@@ -32,10 +40,8 @@ public class TechnologyEntity {
         this.fullname = fullname;
     }
 
-    private String type;
-
-    @javax.persistence.Basic
-    @javax.persistence.Column(name = "type", nullable = false, length = 32)
+    @Basic
+    @Column(name = "type", nullable = false, length = 32)
     public String getType() {
         return type;
     }
@@ -44,10 +50,8 @@ public class TechnologyEntity {
         this.type = type;
     }
 
-    private Integer version;
-
-    @javax.persistence.Basic
-    @javax.persistence.Column(name = "version", nullable = true)
+    @Basic
+    @Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;
     }
@@ -80,10 +84,8 @@ public class TechnologyEntity {
         return result;
     }
 
-    private ImageEntity defaultIcon;
-
-    @javax.persistence.OneToOne(cascade = {})
-    @javax.persistence.JoinColumn(name = "defaultIconId", referencedColumnName = "imageId", nullable = true, table = "")
+    @OneToOne(cascade = {})
+    @JoinColumn(name = "defaultIconId", referencedColumnName = "imageId", nullable = true, table = "")
     public ImageEntity getDefaultIcon() {
         return defaultIcon;
     }
@@ -92,10 +94,8 @@ public class TechnologyEntity {
         this.defaultIcon = defaultIcon;
     }
 
-    private ImageEntity logo;
-
-    @javax.persistence.OneToOne(cascade = {})
-    @javax.persistence.JoinColumn(name = "logoId", referencedColumnName = "imageId", nullable = true, table = "")
+    @OneToOne(cascade = {})
+    @JoinColumn(name = "logoId", referencedColumnName = "imageId", nullable = true, table = "")
     public ImageEntity getLogo() {
         return logo;
     }
@@ -104,10 +104,8 @@ public class TechnologyEntity {
         this.logo = logo;
     }
 
-    private TechnologyEntity parent;
-
-    @javax.persistence.ManyToOne(cascade = {})
-    @javax.persistence.JoinColumn(name = "parent", referencedColumnName = "code", nullable = true, table = "")
+    @ManyToOne(cascade = {})
+    @JoinColumn(name = "parent", referencedColumnName = "code", nullable = true, table = "")
     public TechnologyEntity getParent() {
         return parent;
     }
@@ -116,9 +114,7 @@ public class TechnologyEntity {
         this.parent = parent;
     }
 
-    private Collection<TechnologyEntity> children;
-
-    @javax.persistence.OneToMany(cascade = {}, mappedBy = "parent")
+    @OneToMany(cascade = {}, mappedBy = "parent")
     public Collection<TechnologyEntity> getChildren() {
         return children;
     }
@@ -127,14 +123,21 @@ public class TechnologyEntity {
         this.children = children;
     }
 
-    private Collection<TechnologyVersionEntity> versions;
-
-    @javax.persistence.OneToMany(cascade = {}, mappedBy = "technology")
+    @OneToMany(cascade = {}, mappedBy = "technology")
     public Collection<TechnologyVersionEntity> getVersions() {
         return versions;
     }
 
     public void setVersions(Collection<TechnologyVersionEntity> versions) {
         this.versions = versions;
+    }
+
+    @OneToMany(mappedBy = "technology")
+    public Collection<CandidateCareerTechEntity> getCareers() {
+        return careers;
+    }
+
+    public void setCareers(Collection<CandidateCareerTechEntity> careers) {
+        this.careers = careers;
     }
 }

@@ -5,7 +5,6 @@
              version="2.0">
 
     <persistence-unit name="atlantis">
-
         <class>com.progsan.atlantis.model.AddressEntity</class>
         <class>com.progsan.atlantis.model.CandidateCareerEntity</class>
         <class>com.progsan.atlantis.model.CandidateCareerTaskDetailEntity</class>
@@ -23,7 +22,7 @@
         <class>com.progsan.atlantis.model.LanguageEntity</class>
         <class>com.progsan.atlantis.model.TechnologyEntity</class>
         <class>com.progsan.atlantis.model.TechnologyVersionEntity</class>
-        <class>com.progsan.atlantis.model.CandidatecareertechEntity</class>
+        <class>com.progsan.atlantis.model.CandidateCareerTechEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/cvmaker"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
