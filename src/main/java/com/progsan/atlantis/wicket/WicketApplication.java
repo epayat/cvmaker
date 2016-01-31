@@ -1,6 +1,6 @@
 package com.progsan.atlantis.wicket;
 
-import com.progsan.atlantis.wicket.view.IndexPage;
+import com.progsan.atlantis.wicket.view.HomePage;
 import org.apache.wicket.Page;
 import org.apache.wicket.authroles.authentication.AbstractAuthenticatedWebSession;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebApplication;
@@ -22,7 +22,7 @@ public class WicketApplication extends AuthenticatedWebApplication {
 
     @Override
     public Class<? extends Page> getHomePage() {
-        return IndexPage.class;
+        return HomePage.class;
     }
 
     @Override
