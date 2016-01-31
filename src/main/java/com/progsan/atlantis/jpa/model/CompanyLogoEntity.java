@@ -1,11 +1,11 @@
-package com.progsan.atlantis.model;
+package com.progsan.atlantis.jpa.model;
 
 /**
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "CandidateInterest")
-public class CandidateInterestEntity {
+@javax.persistence.Table(name = "CompanyLogo")
+public class CompanyLogoEntity {
     private Integer id;
 
     @javax.persistence.Id
@@ -35,7 +35,7 @@ public class CandidateInterestEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        CandidateInterestEntity that = (CandidateInterestEntity) o;
+        CompanyLogoEntity that = (CompanyLogoEntity) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (version != null ? !version.equals(that.version) : that.version != null) return false;
@@ -50,27 +50,27 @@ public class CandidateInterestEntity {
         return result;
     }
 
-    private CandidateEntity candidate;
+    private CompanyEntity company;
 
     @javax.persistence.ManyToOne(cascade = {})
-    @javax.persistence.JoinColumn(name = "candiateId", referencedColumnName = "candidateId", nullable = false, table = "")
-    public CandidateEntity getCandidate() {
-        return candidate;
+    @javax.persistence.JoinColumn(name = "companyId", referencedColumnName = "companyId", nullable = false, table = "")
+    public CompanyEntity getCompany() {
+        return company;
     }
 
-    public void setCandidate(CandidateEntity candidate) {
-        this.candidate = candidate;
+    public void setCompany(CompanyEntity company) {
+        this.company = company;
     }
 
-    private InterestEntity interest;
+    private ImageEntity logo;
 
     @javax.persistence.OneToOne(cascade = {})
-    @javax.persistence.JoinColumn(name = "interest", referencedColumnName = "code", nullable = false, table = "")
-    public InterestEntity getInterest() {
-        return interest;
+    @javax.persistence.JoinColumn(name = "logoId", referencedColumnName = "imageId", nullable = false, table = "")
+    public ImageEntity getLogo() {
+        return logo;
     }
 
-    public void setInterest(InterestEntity interest) {
-        this.interest = interest;
+    public void setLogo(ImageEntity logo) {
+        this.logo = logo;
     }
 }

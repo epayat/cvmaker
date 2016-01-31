@@ -1,27 +1,27 @@
-package com.progsan.atlantis.model;
+package com.progsan.atlantis.jpa.model;
 
 /**
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
-@javax.persistence.Table(name = "CandidateCareerTaskDetail")
-public class CandidateCareerTaskDetailEntity {
-    private int id;
+@javax.persistence.Table(name = "CandidateSkill")
+public class CandidateSkillEntity {
+    private Integer id;
 
     @javax.persistence.Id
-    @javax.persistence.Column(name = "id", nullable = false)
-    public int getId() {
+    @javax.persistence.Column(name = "id", nullable = true)
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
     private String freeText;
 
     @javax.persistence.Basic
-    @javax.persistence.Column(name = "freeText", nullable = true, length = 2048)
+    @javax.persistence.Column(name = "freeText", nullable = true, length = 64)
     public String getFreeText() {
         return freeText;
     }
@@ -47,9 +47,9 @@ public class CandidateCareerTaskDetailEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        CandidateCareerTaskDetailEntity that = (CandidateCareerTaskDetailEntity) o;
+        CandidateSkillEntity that = (CandidateSkillEntity) o;
 
-        if (id != that.id) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (freeText != null ? !freeText.equals(that.freeText) : that.freeText != null) return false;
         if (version != null ? !version.equals(that.version) : that.version != null) return false;
 
@@ -58,21 +58,33 @@ public class CandidateCareerTaskDetailEntity {
 
     @Override
     public int hashCode() {
-        int result = id;
+        int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (freeText != null ? freeText.hashCode() : 0);
         result = 31 * result + (version != null ? version.hashCode() : 0);
         return result;
     }
 
-    private CandidateCareerTaskEntity task;
+    private TechnologyEntity technology;
 
     @javax.persistence.OneToOne(cascade = {})
-    @javax.persistence.JoinColumn(name = "candidateCareerTaskId", referencedColumnName = "id", nullable = false, table = "")
-    public CandidateCareerTaskEntity getTask() {
-        return task;
+    @javax.persistence.JoinColumn(name = "techCode", referencedColumnName = "code", nullable = false, table = "")
+    public TechnologyEntity getTechnology() {
+        return technology;
     }
 
-    public void setTask(CandidateCareerTaskEntity task) {
-        this.task = task;
+    public void setTechnology(TechnologyEntity technology) {
+        this.technology = technology;
+    }
+
+    private CandidateEntity candidate;
+
+    @javax.persistence.ManyToOne(cascade = {})
+    @javax.persistence.JoinColumn(name = "candidateId", referencedColumnName = "candidateId", nullable = false, table = "")
+    public CandidateEntity getCandidate() {
+        return candidate;
+    }
+
+    public void setCandidate(CandidateEntity candidate) {
+        this.candidate = candidate;
     }
 }

@@ -1,4 +1,4 @@
-package com.progsan.atlantis.model;
+package com.progsan.atlantis.jpa.model;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package com.progsan.atlantis.model;
+package com.progsan.atlantis.jpa.model;
 
 /**
  * Created by Erdal on 30.01.2016.

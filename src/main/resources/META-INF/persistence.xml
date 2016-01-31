@@ -7,24 +7,24 @@
     <persistence-unit name="atlantis">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>com.progsan.atlantis.model.AddressEntity</class>
-        <class>com.progsan.atlantis.model.CandidateCareerEntity</class>
-        <class>com.progsan.atlantis.model.CandidateCareerTaskDetailEntity</class>
-        <class>com.progsan.atlantis.model.CandidateCareerTaskEntity</class>
-        <class>com.progsan.atlantis.model.CandidateEntity</class>
-        <class>com.progsan.atlantis.model.CandidateInterestEntity</class>
-        <class>com.progsan.atlantis.model.CandidateLanguageEntity</class>
-        <class>com.progsan.atlantis.model.CandidateSkillEntity</class>
-        <class>com.progsan.atlantis.model.CompanyEntity</class>
-        <class>com.progsan.atlantis.model.CompanyIndustryEntity</class>
-        <class>com.progsan.atlantis.model.CompanyLogoEntity</class>
-        <class>com.progsan.atlantis.model.ImageEntity</class>
-        <class>com.progsan.atlantis.model.IndustryEntity</class>
-        <class>com.progsan.atlantis.model.InterestEntity</class>
-        <class>com.progsan.atlantis.model.LanguageEntity</class>
-        <class>com.progsan.atlantis.model.TechnologyEntity</class>
-        <class>com.progsan.atlantis.model.TechnologyVersionEntity</class>
-        <class>com.progsan.atlantis.model.CandidateCareerTechEntity</class>
+        <class>com.progsan.atlantis.jpa.model.AddressEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateCareerEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateCareerTaskDetailEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateCareerTaskEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateInterestEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateLanguageEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateSkillEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CompanyEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CompanyIndustryEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CompanyLogoEntity</class>
+        <class>com.progsan.atlantis.jpa.model.ImageEntity</class>
+        <class>com.progsan.atlantis.jpa.model.IndustryEntity</class>
+        <class>com.progsan.atlantis.jpa.model.InterestEntity</class>
+        <class>com.progsan.atlantis.jpa.model.LanguageEntity</class>
+        <class>com.progsan.atlantis.jpa.model.TechnologyEntity</class>
+        <class>com.progsan.atlantis.jpa.model.TechnologyVersionEntity</class>
+        <class>com.progsan.atlantis.jpa.model.CandidateCareerTechEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/cvmaker"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
