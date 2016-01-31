@@ -5,6 +5,8 @@
              version="2.0">
 
     <persistence-unit name="atlantis">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
         <class>com.progsan.atlantis.model.AddressEntity</class>
         <class>com.progsan.atlantis.model.CandidateCareerEntity</class>
         <class>com.progsan.atlantis.model.CandidateCareerTaskDetailEntity</class>

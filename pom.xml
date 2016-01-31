@@ -34,9 +34,7 @@
                 <version>1.0</version>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>transform</goal>
-                        </goals>
+                        <goals><goal>transform</goal></goals>
                     </execution>
                 </executions>
                 <configuration>
@@ -66,27 +64,25 @@
                     <execution>
                         <id>build-test-environment</id>
                         <phase>generate-test-resources</phase>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
+                        <goals><goal>java</goal></goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <mainClass>com.progsan.Main</mainClass>
-                    <!--
-                    <arguments>
-                        <argument>argument1</argument>
-                    </arguments>
-                    -->
-                </configuration>
+                <configuration><mainClass>com.progsan.Main</mainClass></configuration>
             </plugin>
         </plugins>
     </build>
     <dependencies>
+        <!--
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>javax.persistence</artifactId>
             <version>2.1.1</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.0.7.Final</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -99,34 +95,12 @@
             <version>2.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-servlet</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-json</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-client</artifactId>
-            <version>${jersey.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.extras</groupId>
-            <artifactId>glassfish-embedded-web</artifactId>
-            <version>${glassfish.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
-
 </project>
