@@ -28,6 +28,9 @@ public class WicketApplication extends AuthenticatedWebApplication {
     @Override
     public void init(){
         super.init();
+
+        getMarkupSettings().setStripWicketTags(true);
+
         mountPages();
     }
 

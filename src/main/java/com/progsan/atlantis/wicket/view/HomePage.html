@@ -2,15 +2,106 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+<wicket:head>
+    <link type="text/css" rel="stylesheet" href="../css/HomePage.css">
+    <!-- Slide Show -->
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <!-- ### Analog Clock ### -->
+    <script src="../js/vendor/jquery.thooClock.js"></script>
+    <script src="../js/HomePage.js"></script>
+</wicket:head>
 </head>
 <body>
 <wicket:extend>
-    <h1>Page1</h1>
-    <div wicket:id="helloMessage">
-        [Label's message goes here]
+    <div id="header">
+
+    </div>
+    <div id="loginbox"  class="mainbox col-md-4 col-md-offset-4">
+        <div class="drop-shadow">
+            <div  class="panel panel-info" >
+                <div class="panel-heading">
+                    <div class="panel-title">Login</div>
+                    <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                </div>
+
+                <div id="logon-panel-body"  class="panel-body" >
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- ### Analog Clock ### -->
+                                <div id="clock" class="row"></div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <form id="loginform" class="form-horizontal" role="form" method="post">
+                                    <div class="row input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="usernameGroup:username" value="" placeholder="username"/>
+                                    </div>
+
+                                    <div class="row input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="passwordGroup:password" placeholder="password" value=""/>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 checkbox">
+                                            <div class="row">
+                                                <label>
+                                                    <input id="login-remember" type="checkbox" name="rememberMeGroup:rememberMe" checked="checked"/><span> Anmeldung merken</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <!-- Button -->
+                                                <input type="submit" id="btn-login" class="btn btn-success pull-right" value="Login"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row" id="logo-container">
+                            <img id="java-logo" class="" src="../img/java-oracle.png"/>
+                            <img id="sql-server-logo" class="" src="../img/SQLServer-logo.png"/>
+                            <img id="logo" class="pull-right" src="../img/logo.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+
     </div>
 
+
+    <!-- ### Background Slide Show ### -->
+    <div id="slideshow" class="cycle-slideshow">
+        <img src="../img/wallpaper/city-001.jpg" class="bgM">
+        <img src="../img/wallpaper/city-002.jpg" class="bgM">
+        <img src="../img/wallpaper/city-003.jpg" class="bgM">
+        <img src="../img/wallpaper/city-004.jpg" class="bgM">
+        <img src="../img/wallpaper/city-005.jpg" class="bgM">
+        <img src="../img/wallpaper/city-006.jpg" class="bgM">
+        <img src="../img/wallpaper/city-007.jpg" class="bgM">
+        <img src="../img/wallpaper/city-008.jpg" class="bgM">
+        <img src="../img/wallpaper/city-009.jpg" class="bgM">
+        <img src="../img/wallpaper/city-010.jpg" class="bgM">
+        <img src="../img/wallpaper/city-011.jpg" class="bgM">
+        <img src="../img/wallpaper/city-012.jpg" class="bgM">
+        <img src="../img/wallpaper/city-013.jpg" class="bgM">
+        <img src="../img/wallpaper/city-014.jpg" class="bgM">
+        <img src="../img/wallpaper/city-015.jpg" class="bgM">
+        <img src="../img/wallpaper/city-016.jpg" class="bgM">
+        <img src="../img/wallpaper/city-017.jpg" class="bgM">
+        <img src="../img/wallpaper/city-018.jpg" class="bgM">
+        <img src="../img/wallpaper/city-019.jpg" class="bgM">
+        <img src="../img/wallpaper/city-020.jpg" class="bgM">
+    </div>
 </wicket:extend>
 </body>
 </html>

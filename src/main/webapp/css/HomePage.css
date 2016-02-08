@@ -1,0 +1,56 @@
+#clock{
+
+}
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#logon-panel-body{
+
+}
+
+#loginbox{
+    opacity: 0.85;
+    margin-top: 200px;
+}
+#logo-container{
+    padding-top: 10px;
+    border-top: #AAAAAA 1px solid;
+}
+#logo{
+    width: 168px;
+    height: 64px;
+}
+#java-logo{
+    width: 126px;
+    height: 64px;
+}
+#sql-server-logo{
+    border-left: solid #AAAAAA 1px;
+    padding-left: 10px;
+    width: 240px;
+    height: 64px;
+}
+.citation{
+    font-size: 14px;
+    font-style: italic;
+    color: #666666;
+}
+#header{
+    position: fixed;
+    top:0px;
+    height: 175px;
+    width: 100%;
+
+
+}
+#footer{
+    position: fixed;
+    bottom:0px;
+    height: 50px;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+}

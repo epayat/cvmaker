@@ -84,11 +84,11 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2.1</version>
                 <executions>
-                    <execution>
+                    <!--execution>
                         <id>build-test-environment</id>
                         <phase>generate-test-resources</phase>
                         <goals><goal>java</goal></goals>
-                    </execution>
+                    </execution-->
                 </executions>
                 <configuration><mainClass>com.progsan.Main</mainClass></configuration>
             </plugin>

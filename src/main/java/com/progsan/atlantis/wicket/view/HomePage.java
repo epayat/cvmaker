@@ -9,6 +9,6 @@ public class HomePage extends BaseWebPage {
     @Override
     protected void onInitialize(){
         super.onInitialize();
-        add(new Label("helloMessage", "Hello WicketWorld!"));
+        //add(new Label("helloMessage", "Hello WicketWorld!"));
     }
 }
