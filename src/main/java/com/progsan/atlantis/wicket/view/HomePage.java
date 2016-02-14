@@ -5,11 +5,16 @@ import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.ExternalLink;
 import org.apache.wicket.model.AbstractReadOnlyModel;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 /**
  * Created by Erdal on 31.01.2016.
  */
 public class HomePage extends BaseWebPage {
+    public HomePage(PageParameters parameters) {
+        super(parameters);
+    }
+
     @Override
     protected void onInitialize(){
         super.onInitialize();
