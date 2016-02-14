@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 <wicket:head>
     <link type="text/css" rel="stylesheet" href="../css/HomePage.css">
+    <link type="text/css" rel="stylesheet" href="../css/vendor/bootstrap-social.css">
     <!-- Slide Show -->
     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <!-- ### Analog Clock ### -->
@@ -62,6 +63,16 @@
 
                                 </form>
                             </div>
+                        </div>
+                        <div class="row">
+                            <a class="btn btn-block btn-social btn-facebook">
+                                <span class="fa fa-facebook"></span>
+                                <span>Sign in with Facebook</span>
+                            </a>
+                            <a class="btn btn-block btn-social btn-google" wicket:id="signInWithGoogle">
+                                <span class="fa fa-google-plus"></span>
+                                <span> Sign in with Google</span>
+                            </a>
                         </div>
                         <div class="row" id="logo-container">
                             <img id="java-logo" class="" src="../img/java-oracle.png"/>

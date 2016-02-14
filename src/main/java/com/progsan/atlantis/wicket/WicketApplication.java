@@ -1,6 +1,7 @@
 package com.progsan.atlantis.wicket;
 
 import com.progsan.atlantis.wicket.view.CandidateEditorPage;
+import com.progsan.atlantis.wicket.view.GoogleCallBackPage;
 import com.progsan.atlantis.wicket.view.HomePage;
 import org.apache.wicket.Page;
 import org.apache.wicket.authroles.authentication.AbstractAuthenticatedWebSession;
@@ -38,5 +39,6 @@ public class WicketApplication extends AuthenticatedWebApplication {
     private void mountPages(){
         mountPage("/", getHomePage());
         mountPage("/candidate", CandidateEditorPage.class);
+        mountPage("/google-signed-in", GoogleCallBackPage.class);
     }
 }

@@ -5,16 +5,21 @@ import com.progsan.atlantis.wicket.model.SessionData;
 import org.apache.wicket.Page;
 import org.apache.wicket.Session;
 import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 /**
  * Created by Erdal on 31.01.2016.
  */
 public class BaseWebPage extends WebPage {
+    public BaseWebPage(PageParameters parameters) {
+        super(parameters);
+    }
+
     public SessionData getSessionData(){
         return getUserSession().getSessionData();
     }
 
-    private UserSession getUserSession() {
+    public UserSession getUserSession() {
         return (UserSession)Session.get();
     }
 }

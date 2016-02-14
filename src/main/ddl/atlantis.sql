@@ -14,7 +14,7 @@ drop table language;
 drop table technology;
 drop table technologyversion;
 drop table CandidateCareerTech;
-
+drop table Credentials;
 
 CREATE TABLE Image(
   imageId INT PRIMARY KEY AUTO_INCREMENT,
@@ -70,7 +70,8 @@ CREATE TABLE Candidate(
   photoId INT,
   version INT,
   FOREIGN KEY (addressId) REFERENCES Address(addressId),
-  FOREIGN KEY (photoId) REFERENCES Image(imageId)
+  FOREIGN KEY (photoId) REFERENCES Image(imageId),
+  UNIQUE KEY (email)
 );
 
 CREATE TABLE CandidateInterest(
@@ -195,7 +196,18 @@ CREATE TABLE CandidateCareerTech(
   candidateCareerId INT NOT NULL,
   techCode VARCHAR(32) NOT NULL,
   caption VARCHAR(32),
+  version INT,
   UNIQUE KEY (candidateCareerId, techCode),
   FOREIGN KEY (candidateCareerId) REFERENCES CandidateCareer(id),
   FOREIGN KEY (techCode) REFERENCES Technology(code)
+);
+
+CREATE TABLE Credentials(
+  username VARCHAR(128) not null PRIMARY KEY,
+  password VARCHAR(128),
+  provider VARCHAR(32),
+  authCode VARCHAR(128),
+  accessToken VARCHAR(2048),
+  refreshToken VARCHAR(2048),
+  version INT
 );
