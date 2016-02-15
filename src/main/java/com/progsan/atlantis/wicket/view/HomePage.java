@@ -27,7 +27,9 @@ public class HomePage extends BaseWebPage {
             @Override
             public String getObject() {
                 if ("google".equalsIgnoreCase(provider)){
-                    return String.format("https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=%s&client_id=%s&scope=https://www.googleapis.com/auth/userinfo.profile", getRedirectURI(provider), Constants.CLIENT_ID_GOOGLE);
+                    return String.format("https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=%s&client_id=%s&scope=" +
+                            "https://www.googleapis.com/auth/plus.login+https://www.googleapis.com/auth/plus.me+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email"+
+                            "&approval_prompt=force", getRedirectURI(provider), Constants.CLIENT_ID_GOOGLE);
                 }else
                     return null;
             }

@@ -18,6 +18,7 @@ public class GoogleCallBackPage extends BaseWebPage {
             GoogleAuthHelper authHelper = new GoogleAuthHelper();
 
             GoogleUserInfo userInfo = authHelper.getUserInfo(authCode.toString());
+
             System.out.println(userInfo);
 
             getUserSession().authenticateUser(userInfo);

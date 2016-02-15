@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 public final class GoogleAuthHelper {
     private final Logger LOGGER = LoggerFactory.getLogger(GoogleAuthHelper.class);
     // start google authentication constants
-    private static final Iterable<String> SCOPE = Arrays.asList("https://www.googleapis.com/auth/userinfo.profile;https://www.googleapis.com/auth/userinfo.email".split(";"));
+    private static final Iterable<String> SCOPE = Arrays.asList("https://www.googleapis.com/auth/plus.login;https://www.googleapis.com/auth/plus.me;https://www.googleapis.com/auth/userinfo.profile;https://www.googleapis.com/auth/userinfo.email".split(";"));
     private static final String USER_INFO_URL = "https://www.googleapis.com/oauth2/v1/userinfo";
     private static final JsonFactory JSON_FACTORY = new JacksonFactory();
     private static final HttpTransport HTTP_TRANSPORT = new NetHttpTransport();
