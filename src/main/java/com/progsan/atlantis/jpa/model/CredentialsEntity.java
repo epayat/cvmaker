@@ -76,7 +76,7 @@ public class CredentialsEntity {
         this.refreshToken = refreshToken;
     }
 
-    @Basic
+    @Version
     @Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

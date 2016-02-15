@@ -50,7 +50,7 @@ public class TechnologyEntity {
         this.type = type;
     }
 
-    @Basic
+    @Version
     @Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

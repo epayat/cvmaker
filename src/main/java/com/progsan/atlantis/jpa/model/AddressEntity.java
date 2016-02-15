@@ -1,5 +1,7 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.Version;
+
 /**
  * Created by Erdal on 30.01.2016.
  */
@@ -80,7 +82,7 @@ public class AddressEntity {
 
     private String country;
 
-    @javax.persistence.Basic
+    @Version
     @javax.persistence.Column(name = "country", nullable = true, length = 64)
     public String getCountry() {
         return country;

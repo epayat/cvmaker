@@ -32,6 +32,18 @@ public class CandidateCareerTechEntity {
         this.caption = caption;
     }
 
+    private Integer version;
+
+    @Version
+    @javax.persistence.Column(name = "version", nullable = true)
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -41,7 +53,7 @@ public class CandidateCareerTechEntity {
 
         if (id != that.id) return false;
         if (caption != null ? !caption.equals(that.caption) : that.caption != null) return false;
-
+        if (version != null ? !version.equals(that.version) : that.version != null) return false;
         return true;
     }
 
@@ -49,6 +61,7 @@ public class CandidateCareerTechEntity {
     public int hashCode() {
         int result = id;
         result = 31 * result + (caption != null ? caption.hashCode() : 0);
+        result = 31 * result + (version != null ? version.hashCode() : 0);
         return result;
     }
 

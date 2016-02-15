@@ -8,6 +8,8 @@ import com.progsan.atlantis.wicket.model.SessionData;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
 import org.apache.wicket.authroles.authorization.strategies.role.Roles;
 import org.apache.wicket.request.Request;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -16,6 +18,7 @@ import javax.persistence.Persistence;
  * Created by Erdal on 31.01.2016.
  */
 public class UserSession extends AuthenticatedWebSession {
+    private final Logger LOGGER = LoggerFactory.getLogger(UserSession.class);
     private final SessionData sessionData = new SessionData();
     private EntityManagerFactory entityManagerFactory;
 
@@ -26,6 +29,8 @@ public class UserSession extends AuthenticatedWebSession {
      */
     public UserSession(Request request) {
         super(request);
+        this.bind();
+        LOGGER.info(String.format("new session created. SessionId: %s", this.getId()));
     }
 
     @Override

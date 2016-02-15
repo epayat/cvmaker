@@ -29,4 +29,26 @@ public class CandidateService {
         }
     }
 
+    public CandidateEntity save(CandidateEntity candidateEntity) {
+        EntityManager entityManager = emf.createEntityManager();
+        entityManager.getTransaction().begin();
+        try{
+            if (candidateEntity.getCandidateId() == null){
+                entityManager.persist(candidateEntity);
+                entityManager.getTransaction().commit();
+                return candidateEntity;
+            } else{
+                CandidateEntity res = entityManager.merge(candidateEntity);
+                entityManager.getTransaction().commit();
+                return res;
+            }
+
+        }catch (Exception e){
+            if (entityManager.getTransaction().isActive())
+                entityManager.getTransaction().rollback();
+            throw e;
+        }finally{
+            entityManager.close();
+        }
+    }
 }

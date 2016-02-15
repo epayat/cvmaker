@@ -7,6 +7,8 @@ import org.apache.wicket.Session;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
+import javax.persistence.EntityManagerFactory;
+
 /**
  * Created by Erdal on 31.01.2016.
  */
@@ -21,5 +23,10 @@ public class BaseWebPage extends WebPage {
 
     public UserSession getUserSession() {
         return (UserSession)Session.get();
+    }
+
+
+    protected EntityManagerFactory getEntityManagerFactory() {
+        return getUserSession().getEntityManagerFactory();
     }
 }

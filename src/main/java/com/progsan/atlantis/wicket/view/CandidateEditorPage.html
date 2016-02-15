@@ -2,69 +2,70 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <body>
 <wicket:extend>
-        <div class="panel">
-            <form class="form-horizontal" wicket:id="inputForm">
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="careerDesc">Career Description</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="careerDesc" wicket:id="careerDesc" placeholder="Career Description">
-                    </div>
+    <div class="panel">
+        <form class="form-horizontal" wicket:id="inputForm">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="careerDesc">Career Description</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="careerDesc" wicket:id="careerDesc" placeholder="Career Description">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="firstName">Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="firstName" wicket:id="firstName" placeholder="Name">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="firstName">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="firstName" wicket:id="firstName" placeholder="Name">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="surname">Surname</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="surname" wicket:id="lastName" placeholder="Surname">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="surname">Surname</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="surname" wicket:id="lastName" placeholder="Surname">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="email">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" wicket:id="email" placeholder="Email">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" wicket:id="email" placeholder="Email">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="phone">Phone</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="phone" wicket:id="phone" placeholder="Phone">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="phone">Phone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phone" wicket:id="phone" placeholder="Phone">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="maritalStatus">Marital-Status</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="maritalStatus" wicket:id="maritalStatus" placeholder="Marital-Status">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="maritalStatus">Marital-Status</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="maritalStatus" wicket:id="maritalStatus" placeholder="Marital-Status">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="birthYear">Birth-Year</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="birthYear" wicket:id="birthYear" placeholder="Birth-Year">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="birthYear">Birth-Year</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="birthYear" wicket:id="birthYear" placeholder="Birth-Year">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="earlyStartDate">Early Start Date</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="earlyStartDate" wicket:id="earlyStartDate" placeholder="Early Start Date">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="earlyStartDate">Early Start Date</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="earlyStartDate" wicket:id="earlyStartDate" placeholder="Early Start Date">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="salaryExpectation">Salary Expectation</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="salaryExpectation" wicket:id="salaryExpectation" placeholder="Salary Expectation">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="salaryExpectation">Salary Expectation</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="salaryExpectation" wicket:id="salaryExpectation" placeholder="Salary Expectation">
                 </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
+    </div>
+    <div class="row" wicket:id="feedback"/>
 </wicket:extend>
 </body>
 </html>

@@ -1,5 +1,7 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.Version;
+
 /**
  * Created by Erdal on 30.01.2016.
  */
@@ -32,7 +34,7 @@ public class CandidateCareerTaskDetailEntity {
 
     private Integer version;
 
-    @javax.persistence.Basic
+    @Version
     @javax.persistence.Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

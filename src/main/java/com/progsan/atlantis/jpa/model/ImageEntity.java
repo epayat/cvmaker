@@ -1,5 +1,6 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.Version;
 import java.sql.Timestamp;
 
 /**
@@ -21,8 +22,6 @@ public class ImageEntity {
     }
 
     private String fileName;
-
-
 
 
     private String imageGroup;
@@ -57,7 +56,7 @@ public class ImageEntity {
         this.modifiedOn = modifiedOn;
     }    private Integer version;
 
-    @javax.persistence.Basic
+    @Version
     @javax.persistence.Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

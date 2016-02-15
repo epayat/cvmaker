@@ -1,6 +1,6 @@
 package com.progsan.atlantis.jpa.model;
 
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.List;
@@ -16,6 +16,7 @@ public class CandidateEntity {
 
     @javax.persistence.Id
     @javax.persistence.Column(name = "candidateId", nullable = true)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public Integer getCandidateId() {
         return candidateId;
     }
@@ -146,7 +147,7 @@ public class CandidateEntity {
 
     private Integer version;
 
-    @javax.persistence.Basic
+    @Version
     @javax.persistence.Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

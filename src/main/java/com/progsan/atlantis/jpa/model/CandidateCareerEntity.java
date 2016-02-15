@@ -1,5 +1,6 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.Version;
 import java.sql.Timestamp;
 
 /**
@@ -58,7 +59,7 @@ public class CandidateCareerEntity {
 
     private Integer version;
 
-    @javax.persistence.Basic
+    @Version
     @javax.persistence.Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

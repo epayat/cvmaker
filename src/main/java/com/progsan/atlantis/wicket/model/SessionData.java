@@ -7,6 +7,9 @@ import com.progsan.atlantis.jpa.model.CandidateEntity;
  * Created by Erdal on 08.02.2016.
  */
 public class SessionData {
+    public SessionData(){
+        super();
+    }
     private CandidateEntity candidateEntity;
     private IUserInfo userInfo;
     public CandidateEntity getCandidateEntity() {
