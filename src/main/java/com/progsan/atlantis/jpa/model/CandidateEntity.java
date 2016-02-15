@@ -1,5 +1,6 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.NamedQuery;
 import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  */
 @javax.persistence.Entity
 @javax.persistence.Table(name = "Candidate")
+@NamedQuery(name = "findByEmail", query = "select p from CandidateEntity p where p.email = :email")
 public class CandidateEntity {
     private Integer candidateId;
 

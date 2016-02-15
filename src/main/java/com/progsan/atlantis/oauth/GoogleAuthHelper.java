@@ -4,22 +4,26 @@ import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeRequestUrl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse;
-import com.google.api.client.http.GenericUrl;
-import com.google.api.client.http.HttpRequest;
-import com.google.api.client.http.HttpRequestFactory;
-import com.google.api.client.http.HttpTransport;
+import com.google.api.client.http.*;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.JsonObjectParser;
+import com.google.api.client.json.gson.GsonFactory;
 import com.google.api.client.json.jackson.JacksonFactory;
 
 import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.Arrays;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * A helper class for Google's OAuth2 authentication API.
  */
 public final class GoogleAuthHelper {
+    private final Logger LOGGER = LoggerFactory.getLogger(GoogleAuthHelper.class);
     // start google authentication constants
     private static final Iterable<String> SCOPE = Arrays.asList("https://www.googleapis.com/auth/userinfo.profile;https://www.googleapis.com/auth/userinfo.email".split(";"));
     private static final String USER_INFO_URL = "https://www.googleapis.com/oauth2/v1/userinfo";
@@ -79,8 +83,13 @@ public final class GoogleAuthHelper {
         // Make an authenticated request
         final GenericUrl url = new GenericUrl(USER_INFO_URL);
         final HttpRequest request = requestFactory.buildGetRequest(url);
+        request.setParser(new JsonObjectParser(new GsonFactory()));
         request.getHeaders().setContentType("application/json");
-
-        return request.execute().parseAs(GoogleUserInfo.class);
+        HttpResponse userInfoResponse = request.execute();
+        String json = userInfoResponse.parseAsString();
+        LOGGER.info(json);
+        Gson gson = new GsonBuilder().create();
+        GoogleUserInfo userInfo = gson.fromJson(json, GoogleUserInfo.class);
+        return userInfo;
     }
 }

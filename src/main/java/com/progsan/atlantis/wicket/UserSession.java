@@ -9,12 +9,15 @@ import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
 import org.apache.wicket.authroles.authorization.strategies.role.Roles;
 import org.apache.wicket.request.Request;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 /**
  * Created by Erdal on 31.01.2016.
  */
 public class UserSession extends AuthenticatedWebSession {
     private final SessionData sessionData = new SessionData();
-
+    private EntityManagerFactory entityManagerFactory;
 
     /**
      * Construct.
@@ -43,11 +46,31 @@ public class UserSession extends AuthenticatedWebSession {
 
     public void authenticateUser(IUserInfo userInfo) {
         sessionData.setUserInfo(userInfo);
-        CandidateService candidateService = new CandidateService();
+        CandidateService candidateService = new CandidateService(getEntityManagerFactory());
         CandidateEntity candidateEntity = candidateService.findCandidateEntity(userInfo.getEmail());
+        if (candidateEntity == null){
+            candidateEntity = new CandidateEntity();
+            candidateEntity.setEmail(userInfo.getEmail());
+            candidateEntity.setFirstName(userInfo.getGivenName());
+            candidateEntity.setLastName(userInfo.getFamilyName());
+
+        }
         sessionData.setCandidateEntity(candidateEntity);
     }
     public IUserInfo getUserInfo(){
         return sessionData.getUserInfo() ;
+    }
+
+    public EntityManagerFactory getEntityManagerFactory() {
+        if (entityManagerFactory == null){
+            entityManagerFactory = Persistence.createEntityManagerFactory("atlantis");
+        }
+        return entityManagerFactory;
+    }
+    @Override
+    public void signOut(){
+        super.signOut();
+        entityManagerFactory.close();
+        entityManagerFactory = null;
     }
 }

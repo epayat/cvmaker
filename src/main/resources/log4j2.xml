@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress XmlUnboundNsPrefix -->
+<Configuration
+        status="info"
+        strict="true"
+        name="XMLConfig"
+    >
+    <Properties>
+        <Property name="log-path">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Async name="AsyncFile">
+            <AppenderRef ref="File"/>
+        </Async>
+        <Async name="AsyncConsole">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="FLOW"/>
+        </Async>
+        <Appender type="Console" name="STDOUT">
+            <!--Layout type="PatternLayout" pattern="%m MDC%X%n"/-->
+            <Layout type="PatternLayout" pattern="[%p] %m%n"/>
+            <Filters>
+                <Filter type="MarkerFilter" marker="FLOW" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <Filter type="MarkerFilter" marker="EXCEPTION" onMatch="DENY" onMismatch="ACCEPT"/>
+            </Filters>
+        </Appender>
+        <Appender type="Console" name="FLOW">
+            <Layout type="PatternLayout" pattern="%C{1}.%M %m %ex%n"/><!-- class and line number -->
+            <Filters>
+                <Filter type="MarkerFilter" marker="FLOW" onMatch="ACCEPT" onMismatch="NEUTRAL"/>
+                <Filter type="MarkerFilter" marker="EXCEPTION" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </Appender>
+
+        <RollingFile name="File" fileName="${log-path}/handshake.server.log"
+                     filePattern="${log-path}/handshake.server-%d{yyyy-MM-dd}-%i.log.gz" >
+            <PatternLayout>
+                <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="4"/>
+        </RollingFile>
+
+        <RollingFile name="AuthServiceProtocol" fileName="${log-path}/handshake.auth-svc.log"
+                     filePattern="${log-path}/handshake.auth-svc-%d{yyyy-MM-dd}-%i.log.gz" >
+            <PatternLayout>
+                <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <RollingFile name="OAuth2Protocol" fileName="${log-path}/handshake.oauth2.log"
+                     filePattern="${log-path}/handshake.oauth2-%d{yyyy-MM-dd}-%i.log.gz" >
+            <PatternLayout>
+                <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <RollingFile name="FastTrackProtocol" fileName="${log-path}/handshake.fasttrack.log"
+                     filePattern="${log-path}/handshake.fasttrack-%d{yyyy-MM-dd}-%i.log.gz" >
+            <PatternLayout>
+                <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="AsyncFile" level="info"/>
+            <AppenderRef ref="AsyncConsole" level="info"/>
+        </Root>
+        <!-- additivity means, that parent-logger (in every case the root-logger) will also get the chance to log this stuff -->
+        <AsyncLogger name="com.santander.kosyfa.jpa.service" additivity="TRUE" level="info">
+            <AppenderRef ref="AuthServiceProtocol" level="debug" />
+        </AsyncLogger>
+        <AsyncLogger name="com.santander.kosyfa.handshake.oauth2" additivity="TRUE" level="info">
+            <AppenderRef ref="OAuth2Protocol" level="debug" />
+        </AsyncLogger>
+        <AsyncLogger name="com.santander.kosyfa.handshake.fasttrack" additivity="TRUE" level="debug">
+            <AppenderRef ref="FastTrackProtocol" level="debug" />
+        </AsyncLogger>
+        <AsyncLogger name="net.sf.ehcache" additivity="TRUE" level="info">
+            <AppenderRef ref="FastTrackProtocol" level="info" />
+        </AsyncLogger>
+    </Loggers>
+
+</Configuration>
