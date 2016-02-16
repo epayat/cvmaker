@@ -3,6 +3,24 @@
 <body>
 <wicket:extend>
     <div class="panel">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+            </div>
+            <div class="col-md-6">
+                <form action="post" class="form-inline" role="form" wicket:id ="updateForm">
+                    <div class="form-group">
+                        <input class="branded-update-file-input" type="file" wicket:id="updateContentUpload"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-xs pull-right">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span>Update</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
         <form class="form-horizontal" wicket:id="inputForm">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="careerDesc">Career Description</label>
