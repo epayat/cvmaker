@@ -4,6 +4,10 @@ package com.progsan.atlantis.oauth;
  * Created by Erdal on 14.02.2016.
  */
 public class Constants {
+    public static final String CLIENT_ID_FB = "209487559404864";
+    public static final String CLIENT_SECRET_FB = "a31239d9481ef7eb4ee477133af11807";
+    public static final String CALLBACK_URI_FB = "http://localhost:8080/fb-signed-in";
+
     public static final String CLIENT_ID_LINKEDIN = "77lb8qg8hxgwvt";
     public static final String CLIENT_SECRET_LINKEDID = "D1wHJXSeRcdN3YUZ";
 

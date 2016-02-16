@@ -33,6 +33,12 @@ public class CandidateService {
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
         try{
+            if (candidateEntity.getPhoto() != null){
+                if (candidateEntity.getPhoto().getImageId() == null)
+                    entityManager.persist(candidateEntity.getPhoto());
+                else
+                    candidateEntity.setPhoto(entityManager.merge(candidateEntity.getPhoto()));
+            }
             if (candidateEntity.getCandidateId() == null){
                 entityManager.persist(candidateEntity);
                 entityManager.getTransaction().commit();

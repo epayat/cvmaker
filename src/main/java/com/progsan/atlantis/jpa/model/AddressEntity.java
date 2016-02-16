@@ -82,7 +82,7 @@ public class AddressEntity {
 
     private String country;
 
-    @Version
+    @javax.persistence.Basic
     @javax.persistence.Column(name = "country", nullable = true, length = 64)
     public String getCountry() {
         return country;
@@ -94,7 +94,7 @@ public class AddressEntity {
 
     private Integer version;
 
-    @javax.persistence.Basic
+    @Version
     @javax.persistence.Column(name = "version", nullable = true)
     public Integer getVersion() {
         return version;

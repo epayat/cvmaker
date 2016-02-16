@@ -58,8 +58,8 @@ public class UserSession extends AuthenticatedWebSession {
             candidateEntity.setEmail(userInfo.getEmail());
             candidateEntity.setFirstName(userInfo.getGivenName());
             candidateEntity.setLastName(userInfo.getFamilyName());
-
         }
+        candidateEntity.addPictureIfNotSet(userInfo.getPictureURL());
         sessionData.setCandidateEntity(candidateEntity);
     }
     public IUserInfo getUserInfo(){

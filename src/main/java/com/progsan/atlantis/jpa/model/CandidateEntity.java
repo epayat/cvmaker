@@ -1,6 +1,14 @@
 package com.progsan.atlantis.jpa.model;
 
+import org.apache.commons.io.IOUtils;
+
 import javax.persistence.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.List;
@@ -255,5 +263,24 @@ public class CandidateEntity {
 
     public void setSkills(Collection<CandidateSkillEntity> skills) {
         this.skills = skills;
+    }
+
+    public void addPictureIfNotSet(String pictureURL) {
+        if (getPhoto() == null){
+            try{
+                URL url = new URL(pictureURL);
+                URLConnection conn = url.openConnection();
+                InputStream in = conn.getInputStream();
+                ImageEntity imageEntity = new ImageEntity();
+                imageEntity.setFileName(url.getPath());
+                imageEntity.setImageGroup("photo");
+                imageEntity.setModifiedOn(new Timestamp((new java.util.Date()).getTime()));
+                imageEntity.setData(IOUtils.toByteArray(in));
+
+                this.setPhoto(imageEntity);
+            }catch (IOException e){
+                throw new RuntimeException(e);
+            }
+        }
     }
 }

@@ -1,7 +1,8 @@
 package com.progsan.atlantis.jpa.model;
 
-import javax.persistence.Version;
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Arrays;
 
 /**
  * Created by Erdal on 30.01.2016.
@@ -10,9 +11,11 @@ import java.sql.Timestamp;
 @javax.persistence.Table(name = "Image")
 public class ImageEntity {
     private Integer imageId;
+    private byte[] data;
 
     @javax.persistence.Id
     @javax.persistence.Column(name = "imageId", nullable = true)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public Integer getImageId() {
         return imageId;
     }
@@ -56,6 +59,17 @@ public class ImageEntity {
         this.modifiedOn = modifiedOn;
     }    private Integer version;
 
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
+    @Column(name = "DATA", nullable = true, insertable = true, updatable = true)
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
+    }
+
     @Version
     @javax.persistence.Column(name = "version", nullable = true)
     public Integer getVersion() {
@@ -78,7 +92,7 @@ public class ImageEntity {
         if (imageGroup != null ? !imageGroup.equals(that.imageGroup) : that.imageGroup != null) return false;
         if (modifiedOn != null ? !modifiedOn.equals(that.modifiedOn) : that.modifiedOn != null) return false;
         if (version != null ? !version.equals(that.version) : that.version != null) return false;
-
+        if (!Arrays.equals(data, that.data)) return false;
         return true;
     }
 
@@ -89,6 +103,7 @@ public class ImageEntity {
         result = 31 * result + (imageGroup != null ? imageGroup.hashCode() : 0);
         result = 31 * result + (modifiedOn != null ? modifiedOn.hashCode() : 0);
         result = 31 * result + (version != null ? version.hashCode() : 0);
+        result = 31 * result + (data != null ? Arrays.hashCode(data) : 0);
         return result;
     }
 }

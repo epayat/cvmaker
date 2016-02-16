@@ -9,4 +9,5 @@ public interface IUserInfo {
     String getGivenName();
     String getFamilyName();
     String getPictureURL();
+    Gender getGenderAsEnum();
 }

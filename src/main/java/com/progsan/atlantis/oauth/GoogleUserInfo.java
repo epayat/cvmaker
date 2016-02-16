@@ -1,13 +1,17 @@
 package com.progsan.atlantis.oauth;
 
+import com.progsan.atlantis.Gender;
 import com.progsan.atlantis.IUserInfo;
+import org.slf4j.LoggerFactory;
 
 import java.io.Serializable;
+import java.util.logging.Logger;
 
 /**
  * Created by Erdal on 14.02.2016.
  */
 public class GoogleUserInfo implements Serializable, IUserInfo {
+    private final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(FacebookAuthHelper.class);
     private String id;
     private String email;
     private boolean verified_email;
@@ -44,6 +48,21 @@ public class GoogleUserInfo implements Serializable, IUserInfo {
     @Override
     public String getPictureURL() {
         return getPicture();
+    }
+
+    @Override
+    public Gender getGenderAsEnum() {
+        if (gender != null){
+            if (gender.equalsIgnoreCase("male"))
+                return Gender.MALE;
+            else if (gender.equalsIgnoreCase("female"))
+                return Gender.MALE;
+            else {
+                LOGGER.warn("unknown gender text:" + gender);
+                return Gender.UNKNOWN;
+            }
+        }else
+            return Gender.UNKNOWN;
     }
 
     public void setEmail(String email) {
