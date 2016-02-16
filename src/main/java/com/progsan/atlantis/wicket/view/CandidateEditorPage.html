@@ -5,12 +5,12 @@
     <div class="panel">
         <div class="row">
             <div class="col-md-6">
-                <img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+                <img id="photo" src="cinqueterre.jpg" class="img-thumbnail" alt="photo" wicket:id="photo">
             </div>
             <div class="col-md-6">
-                <form action="post" class="form-inline" role="form" wicket:id ="updateForm">
+                <form action="post" class="form-inline" role="form" wicket:id ="updatePhotoForm">
                     <div class="form-group">
-                        <input class="branded-update-file-input" type="file" wicket:id="updateContentUpload"/>
+                        <input class="branded-update-file-input" type="file" wicket:id="updatePhoto"/>
                     </div>
                     <button type="submit" class="btn btn-primary btn-xs pull-right">
                         <i class="fa fa-pencil-square-o"></i>
