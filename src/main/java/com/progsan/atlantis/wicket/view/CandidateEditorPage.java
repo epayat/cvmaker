@@ -1,5 +1,6 @@
 package com.progsan.atlantis.wicket.view;
 
+import com.progsan.atlantis.jpa.model.AddressEntity;
 import com.progsan.atlantis.jpa.model.CandidateEntity;
 import com.progsan.atlantis.jpa.model.ImageEntity;
 import com.progsan.atlantis.jpa.service.CandidateService;
@@ -57,7 +58,7 @@ public class CandidateEditorPage extends BaseWebPage {
         this.add(image);
         this.add(new UpdatePhotoForm("updatePhotoForm"));
 
-        Form<CandidateEntity> inputForm = new Form<CandidateEntity>("inputForm", new CompoundPropertyModel<>(new IModel<CandidateEntity>() {
+        Form<CandidateEntity> candidateForm = new Form<CandidateEntity>("candidateForm", new CompoundPropertyModel<>(new IModel<CandidateEntity>() {
             @Override
             public CandidateEntity getObject() {
                 return getSessionData().getCandidateEntity();
@@ -77,23 +78,62 @@ public class CandidateEditorPage extends BaseWebPage {
             protected void onSubmit(){
                 CandidateService candidateService = new CandidateService(getEntityManagerFactory());
                 candidateService.save(getSessionData().getCandidateEntity());
+                getPage().info("changes committed into database.");
             }
             protected void onError(){
-                LOGGER.warn("error on form submit!");
+                LOGGER.warn("error on candidate form submit!");
             }
         };
-        this.add(inputForm);
+        this.add(candidateForm);
 
-        inputForm.add(new TextField<String>("careerDesc"));
-        inputForm.add(new TextField<String>("firstName"));
-        inputForm.add(new TextField<String>("lastName"));
-        inputForm.add(new EmailTextField("email"));
-        inputForm.add(new TextField<String>("phone"));
-        inputForm.add(new TextField<String>("maritalStatus"));
-        inputForm.add(new TextField<Integer>("birthYear"));
-        inputForm.add(new DateTextField("earlyStartDate"));
-        inputForm.add(new TextField<Double>("salaryExpectation"));
+        candidateForm.add(new TextField<String>("careerDesc"));
+        candidateForm.add(new TextField<String>("firstName"));
+        candidateForm.add(new TextField<String>("lastName"));
+        candidateForm.add(new EmailTextField("email"));
+        candidateForm.add(new TextField<String>("phone"));
+        candidateForm.add(new TextField<String>("maritalStatus"));
+        candidateForm.add(new TextField<Integer>("birthYear"));
+        candidateForm.add(new DateTextField("earlyStartDate"));
+        candidateForm.add(new TextField<Double>("salaryExpectation"));
 
+        Form<AddressEntity> addressForm = new Form<AddressEntity>("addressForm", new CompoundPropertyModel<AddressEntity>(new IModel<AddressEntity>() {
+            @Override
+            public AddressEntity getObject() {
+                CandidateEntity candidateEntity = getSessionData().getCandidateEntity();
+                if (candidateEntity.getAddress() == null){
+                    candidateEntity.setAddress(new AddressEntity());
+                }
+                return candidateEntity.getAddress();
+            }
+
+            @Override
+            public void setObject(AddressEntity object) {
+                CandidateEntity candidateEntity = getSessionData().getCandidateEntity();
+                candidateEntity.setAddress(object);
+            }
+
+            @Override
+            public void detach() {
+
+            }
+        })) {
+            protected void onSubmit(){
+                CandidateService candidateService = new CandidateService(getEntityManagerFactory());
+                getSessionData().setCandidateEntity(candidateService.save(getSessionData().getCandidateEntity()));
+                getPage().info("changes committed into database.");
+            }
+            protected void onError(){
+                LOGGER.warn("error on address form submit!");
+            }
+        };
+
+        addressForm.add(new TextField<String>("street1"));
+        addressForm.add(new TextField<String>("street2"));
+        addressForm.add(new TextField<String>("houseNr"));
+        addressForm.add(new TextField<String>("postalCode"));
+        addressForm.add(new TextField<String>("city"));
+        addressForm.add(new TextField<String>("country"));
+        this.add(addressForm);
         this.add(new FeedbackPanel("feedback"));
     }
 
@@ -114,9 +154,10 @@ public class CandidateEditorPage extends BaseWebPage {
         {
             final List<FileUpload> uploads = fileUploadField.getFileUploads();
             if (uploads != null){
-                for (FileUpload upload : uploads){
-                    EntityManager entityManager = getEntityManagerFactory().createEntityManager();
 
+                for (FileUpload upload : uploads){
+
+                    EntityManager entityManager = getEntityManagerFactory().createEntityManager();
                     entityManager.getTransaction().begin();
                     try {
                         CandidateEntity candidateEntity = getSessionData().getCandidateEntity();
@@ -125,8 +166,6 @@ public class CandidateEditorPage extends BaseWebPage {
                             entityManager.persist(candidateEntity.getPhoto());
                         }
 
-                        // set client id from a drop down choice "brands"
-
                         candidateEntity.getPhoto().setModifiedOn(new Timestamp((new Date()).getTime()));
                         candidateEntity.getPhoto().setFileName(upload.getClientFileName());
                         candidateEntity.getPhoto().setData(IOUtils.toByteArray(upload.getInputStream()));
@@ -134,7 +173,9 @@ public class CandidateEditorPage extends BaseWebPage {
                         candidateEntity = entityManager.merge(candidateEntity);
                         getSessionData().setCandidateEntity(candidateEntity);
                         entityManager.getTransaction().commit();;
+
                         getPage().info("saved file: " + upload.getClientFileName());
+
                     } catch (IOException e) {
                         if (entityManager.getTransaction().isActive())
                             entityManager.getTransaction().rollback();
@@ -142,6 +183,7 @@ public class CandidateEditorPage extends BaseWebPage {
                     }finally {
                         if (entityManager.getTransaction().isActive())
                             entityManager.getTransaction().rollback();
+                        entityManager.close();
                     }
                 }
             }

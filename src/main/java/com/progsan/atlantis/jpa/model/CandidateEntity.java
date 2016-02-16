@@ -21,6 +21,7 @@ import java.util.List;
 @NamedQuery(name = "findByEmail", query = "select p from CandidateEntity p where p.email = :email")
 public class CandidateEntity {
     private Integer candidateId;
+    private AddressEntity address;
 
     @javax.persistence.Id
     @javax.persistence.Column(name = "candidateId", nullable = true)
@@ -200,6 +201,7 @@ public class CandidateEntity {
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
+        result = 31 * result + (address != null ? address.hashCode() : 0);
         result = 31 * result + (maritalStatus != null ? maritalStatus.hashCode() : 0);
         result = 31 * result + (birthYear != null ? birthYear.hashCode() : 0);
         result = 31 * result + (salaryExpectation != null ? salaryExpectation.hashCode() : 0);
@@ -282,5 +284,14 @@ public class CandidateEntity {
                 throw new RuntimeException(e);
             }
         }
+    }
+    @ManyToOne
+    @JoinColumn(name="addressId", referencedColumnName = "addressId", nullable = true)
+    public AddressEntity getAddress() {
+        return address;
+    }
+
+    public void setAddress(AddressEntity address) {
+        this.address = address;
     }
 }

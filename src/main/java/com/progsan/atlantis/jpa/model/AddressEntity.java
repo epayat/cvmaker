@@ -1,5 +1,7 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Version;
 
 /**
@@ -12,6 +14,7 @@ public class AddressEntity {
 
     @javax.persistence.Id
     @javax.persistence.Column(name = "addressId", nullable = true)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public Integer getAddressId() {
         return addressId;
     }
@@ -35,7 +38,7 @@ public class AddressEntity {
     private String street2;
 
     @javax.persistence.Basic
-    @javax.persistence.Column(name = "street2", nullable = false, length = 64)
+    @javax.persistence.Column(name = "street2", nullable = true, length = 64)
     public String getStreet2() {
         return street2;
     }
@@ -71,7 +74,7 @@ public class AddressEntity {
     private String city;
 
     @javax.persistence.Basic
-    @javax.persistence.Column(name = "city", nullable = true, length = 64)
+    @javax.persistence.Column(name = "city", nullable = false, length = 64)
     public String getCity() {
         return city;
     }
@@ -83,7 +86,7 @@ public class AddressEntity {
     private String country;
 
     @javax.persistence.Basic
-    @javax.persistence.Column(name = "country", nullable = true, length = 64)
+    @javax.persistence.Column(name = "country", nullable = false, length = 64)
     public String getCountry() {
         return country;
     }
