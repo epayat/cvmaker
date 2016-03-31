@@ -513,7 +513,11 @@
                         </fo:table-row>
                         <fo:table-row height="24mm">
                           <fo:table-cell text-align="center" padding-right="3mm">
-                            <fo:block><xsl:value-of select="concat($ResumeDoc/Personal/Height/text(), $ResumeDoc/Personal/Height/@unit, '/', $ResumeDoc/Personal/Weight/text(), $ResumeDoc/Personal/Weight/@unit, ', ', $ResumeDoc/Personal/MaritalStatus, ', ', $LangDoc/Translation[@id='birthDate'],' ', $ResumeDoc/Personal/Birthdate)"/></fo:block>
+                            <fo:block>
+                              <!--
+                              <xsl:value-of select="concat($ResumeDoc/Personal/Height/text(), $ResumeDoc/Personal/Height/@unit, '/', $ResumeDoc/Personal/Weight/text(), $ResumeDoc/Personal/Weight/@unit, ', ', $ResumeDoc/Personal/MaritalStatus, ', ', $LangDoc/Translation[@id='birthDate'],' ', $ResumeDoc/Personal/Birthdate)"/>
+                              -->
+                            </fo:block>
                           </fo:table-cell>
                           <fo:table-cell padding-left="2mm" padding-right="1.50mm">
                             <fo:table table-layout="fixed" width="100%">

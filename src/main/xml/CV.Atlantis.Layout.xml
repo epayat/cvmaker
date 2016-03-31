@@ -5,7 +5,7 @@
 <Layout pageWidth="210"
         pageHeight="297"
         marginTop="20"
-        marginBottom="20"
+        marginBottom="15"
         marginLeft="15"
         marginRight="15"
         includeScreenShots="false">
@@ -46,6 +46,18 @@
   <PersonalDataSheet height="250"/>
   <CareerDetails>
     <Page>
+
+      <CareerDetail id="db2016" height="80" instLogo="images/deutsche-bank.png" fontSize="10pt">
+        <HighligtedTechs>
+          <Technology caption="JDK 1.7"     width="16" icon="images/Win7JavaLibrary.png"/>
+          <Technology caption="IntelliJ 14" width="16" icon="images/intellij_icon.png"/>
+          <Technology caption="Oracle 12"   width="30" icon="images/Oracle.png"/>
+          <Technology caption="Wicket 6"  width="16" icon="images/apache_wicket.png"/>
+          <Technology caption="Spring-Frm." width="16" icon="images/spring.png"/>
+          <Technology caption="Tomcat"   width="16" icon="images/Tomcat.png"/>
+        </HighligtedTechs>
+      </CareerDetail>
+
       <CareerDetail id="Santander2014" height="160" instLogo="images/logo-santander.png" fontSize="10pt">
         <HighligtedTechs>
           <Technology caption="JDK 1.7"     width="16" icon="images/Win7JavaLibrary.png"/>
@@ -56,42 +68,41 @@
           <Technology caption="IBM WAS"   width="16" icon="images/WebSphere.png"/>
         </HighligtedTechs>
       </CareerDetail>
-      <CareerDetail id="Progsan2103" height="80" instLogo="images/Progsan-Logo-Vert.png" >
+    </Page>
+
+    <Page>
+      <CareerDetail id="Progsan2103" height="80" instLogo="images/Progsan-Logo-Vert.png">
         <HighligtedTechs>
           <Technology caption="JDK 1.7"       width="16" icon="images/Win7JavaLibrary.png"/>
           <Technology caption="IntelliJ 14"   width="16" icon="images/intellij_icon.png"/>
           <Technology caption="MySQL 5.5"     width="16" icon="images/MySQL.png"/>
+          <Technology caption="Wicket 6"      width="16" icon="images/apache_wicket.png"/>
           <Technology caption="HTML"          width="16" icon="images/HTML.png"/>
-          <Technology caption="XML"           width="16" icon="images/XML.png"/>
           <Technology caption="XSLT"          width="16" icon="images/xsl.png"/>
           <Technology caption="Apache Fop"    width="16" icon="images/fop.png"/>
         </HighligtedTechs>
       </CareerDetail>
-
-    </Page>
-    <Page>
-      <CareerDetail id="cas2012" height="120" instLogo="images/CAS_Daimler.png" fontSize="12pt">
+      <CareerDetail id="cas2012" height="80" instLogo="images/CAS_Daimler.png" >
         <HighligtedTechs>
-          <Technology caption="Delphi 2007"   width="17" icon="images/Win7DelphiLibrary.png"/>
-          <Technology caption="Visual Studio" width="17" icon="images/Win7MVS9Library.png"/>
-          <Technology caption="C#.NET 4.0"    width="17" icon="images/Microsoft_NET_Icon.png"/>
-          <Technology caption="WinAPI"        width="17" icon="images/windows-icon.png"/>
+          <Technology caption="Delphi 2007"   width="16" icon="images/Win7DelphiLibrary.png"/>
+          <Technology caption="Visual Studio" width="16" icon="images/Win7MVS9Library.png"/>
+          <Technology caption="C#.NET 4.0"    width="16" icon="images/Microsoft_NET_Icon.png"/>
+          <Technology caption="WinAPI"        width="16" icon="images/windows-icon.png"/>
           <Technology caption="SQLite"        width="24" icon="images/SQLite.png"/>
-          <Technology caption="XML"           width="17" icon="images/XML.png"/>
-          <Technology caption="XSLT"          width="17" icon="images/xsl.png"/>
-          <Technology caption="Gimp"          width="17" icon="images/GIMP.png"/>
+          <Technology caption="XML"           width="16" icon="images/XML.png"/>
+          <Technology caption="XSLT"          width="16" icon="images/xsl.png"/>
+          <Technology caption="Gimp"          width="16" icon="images/GIMP.png"/>
         </HighligtedTechs>
       </CareerDetail>
-      <CareerDetail id="tuneup2011" height="120" instLogo="images/TuneUp.png" fontSize="11pt">
+      <CareerDetail id="tuneup2011" height="80" instLogo="images/TuneUp.png" fontSize="10pt">
         <HighligtedTechs>
-          <Technology caption="Delphi 2009" width="18" icon="images/Win7DelphiLibrary.png"/>
-          <Technology caption="WinAPI"      width="18" icon="images/windows-icon.png"/>
-          <Technology caption="XML"         width="18" icon="images/XML.png"/>
-          <Technology caption="HTML"        width="18" icon="images/HTML.png"/>
-          <Technology caption="Visual C++"  width="18" icon="images/Win7MVS9Library.png"/>
+          <Technology caption="Delphi 2009" width="16" icon="images/Win7DelphiLibrary.png"/>
+          <Technology caption="WinAPI"      width="16" icon="images/windows-icon.png"/>
+          <Technology caption="XML"         width="16" icon="images/XML.png"/>
+          <Technology caption="HTML"        width="16" icon="images/HTML.png"/>
+          <Technology caption="Visual C++"  width="16" icon="images/Win7MVS9Library.png"/>
         </HighligtedTechs>
       </CareerDetail>
-
     </Page>
     <Page>
       <CareerDetail id="jonasRedmann" height="160" instLogo="images/JonasRedmann.png">

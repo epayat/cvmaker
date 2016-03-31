@@ -19,7 +19,7 @@
     </Address>
     <!--Photo url="images/Photo.png"/-->
     <Photo url="images/PASS_FOTO.png"/>
-    <MaritalStatus>Single</MaritalStatus>
+    <MaritalStatus></MaritalStatus>
     <Birthdate>03.05.1975</Birthdate>
     <Weight unit="kg">78</Weight>
     <Height unit="cm">182</Height>
@@ -191,6 +191,7 @@
     <Field>Datenbank Design / Optimierung / Programmierung / Migrieren</Field>
   </Fields>
   <PersonalDataSheet>
+    <Item startedOn="02/2016" endedOn="05/2016" formOfEmp="Freiberufler" instLogo="images/deutsche-bank.png" instName="Deutsche Bank">Mitarbeit an einem Web basierten Deployment Automatiserungstool.</Item>
     <Item startedOn="04/2014" endedOn="04/2016" formOfEmp="Freiberufler" instLogo="images/logo-santander.png" instName="Santander Bank">Mitarbeit an einem Web basierten Fahrzeug-Finanzierung-System. Neue-Entwicklung eines web basierten Datenimporttools für die Captives. </Item>
     <Item startedOn="03/2013" endedOn="07/2013" formOfEmp="Freiberufler" instLogo="images/Progsan-Logo-Vert.png" instName="Progsan Software">Entwicklung einer Web basierten Lebenslauf-Erstellungstool. </Item>
     <Item startedOn="01/2012" endedOn="01/2013" formOfEmp="Freiberufler" instLogo="images/CAS_Daimler.png" instName="CAS AG, Daimler AG">Mitarbeit an Daimler/Mercedes-Benz LKW Vertrieb Software(MBKS). Dabei Implementierung von Leasing-Baustein von Daimler/Mercedes-Benz-Charterway Projekt.</Item>
@@ -205,8 +206,10 @@
     <Item startedOn="09/2001" endedOn="09/2002" formOfEmp="Sprachkurse"  instLogo="images/VHS.png" instName="VHS">Deutschkurs an der Volkshochschule bis zur Oberstufe.Studienkolleg an der Goethe Universität einschließlich DSH Zertifizierung.</Item>
     <Item startedOn="09/1995" endedOn="07/2000" formOfEmp="Studium"      instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">Marmara Universität, Studiengang Computer &amp; Elektronik(Englisch)</Item>
     <Item startedOn="09/1994" endedOn="07/1995" formOfEmp="Sprachkurs"   instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">English Preparing School an der Marmara Universität.</Item>
-    <!--Item startedOn="09/1992" endedOn="07/1994" formOfEmp="Studium"      instLogo="images/GaziUnv.png" instName="Gazi Unv.">Gazi Universität, Studiengang Computer &amp; Elektronik.</Item-->
+    <!--
+    <Item startedOn="09/1992" endedOn="07/1994" formOfEmp="Studium"      instLogo="images/GaziUnv.png" instName="Gazi Unv.">Gazi Universität, Studiengang Computer &amp; Elektronik.</Item>
     <Item startedOn="09/1989" endedOn="07/1992" formOfEmp="Berufsschule" instLogo="images/mehmet akif ersoy end.meslek.lisesi.logo.png" instName="mehmet akif ersoy end.meslek lisesi">Mehmet Akif Ersoy Berufsschule Computer &amp; Elektronik</Item>
+    -->
   </PersonalDataSheet>
   <Languages>
     <Language id="DEU" level="090"/>
@@ -226,6 +229,35 @@
         <item year="2004">DSH Prüfung bestanden.</item>
     </PersonalAchievements>
   <CareerDetails>
+    <CareerDetail id="db2016" type="Projekt" startedOn="02/2016" finishedOn="05/2016" duration="3M">
+      <Institution caption="Deutsche Bank" field="Finanz, Bank" size="1000+ Mitarbeiter"></Institution>
+      <Tasks>
+        <Task>
+          <Summary>Web basierte Deployment Automatiserungstool(SQUAREs).</Summary>
+          <Detail>Full-automatische erstellung von angepassten Konfiguation-Datein für jede Stage (z.B. INT, PRE , PRO)</Detail>
+          <Detail>Automatische deployment von Web-Anwendungen auf verschiedene App-Containers</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="JDK 1.7"/>
+        <Technology caption="Oracle 12" />
+        <Technology caption="IntelliJ 14"/>
+        <Technology caption="Wicket 6"/>
+        <Technology caption="Spring-Frm."/>
+        <Technology caption="Tomcat"/>
+        <Technology caption="HTML"/>
+        <Technology caption="JQuery"/>
+        <Technology caption="RESTful, JSON"/>
+        <Technology caption="Jersey"/>
+        <Technology caption="JPA"/>
+        <Technology caption="Hibernate"/>
+        <Technology caption="Maven"/>
+        <Technology caption="Nexus"/>
+        <Technology caption="Jenkins"/>
+        <Technology caption="GIT"/>
+        <Technology caption="SVN"/>
+      </Technologies>
+    </CareerDetail>
     <CareerDetail id="Santander2014" type="Projekt" startedOn="03/2014" finishedOn="04/2016" duration="24M">
       <Institution caption="Santander Consumer Bank / ISBAN" field="Finanz, Bank" size="1000+ Mitarbeiter"/>
       <Tasks>
@@ -275,7 +307,11 @@
         <Technology caption="Jersey"/>
         <Technology caption="Apache OLTU"/>
         <Technology caption="OAUTH2"/>
+        <Technology caption="JPA"/>
+        <Technology caption="Hibernate"/>
         <Technology caption="Maven"/>
+        <Technology caption="Jenkins"/>
+        <Technology caption="SVN"/>
       </Technologies>
     </CareerDetail>
     <CareerDetail id="Progsan2103" type="Projekt" startedOn="03/2013" finishedOn="07/2013" duration="4M">
@@ -310,10 +346,11 @@
           <Detail>Research, Design, Entwicklung und automasierte Testen des Leasing-Bausteins von Daimler/Mercedes-Benz-Charterway-Projekt in Delphi 2009 und SQLite. Trotz erhebliche finanztechnische Komplexität, konnte ich meinen Teil fehlerfrei und vorzeitig liefern.</Detail>
           <Detail>Modernizierung des veralteten UI Designs und CodeBases.</Detail>
           <Detail>Entwicklung von vielen neuen Komponenten für die Modernizierung.</Detail>
-          <Detail>Entwicklung von Code-Generatoren.Umsetzung erfolgte in C#.NET 4.0.</Detail>
-          <!--
-          <Detail>Entwurf von vielen neuen Icons für die UI-Modernizierung mit Gimp.</Detail>
-          -->
+            <!--
+              <Detail>Entwicklung von Code-Generatoren.Umsetzung erfolgte in C#.NET 4.0.</Detail>
+
+            <Detail>Entwurf von vielen neuen Icons für die UI-Modernizierung mit Gimp.</Detail>
+            -->
         </Task>
       </Tasks>
       <Technologies>
