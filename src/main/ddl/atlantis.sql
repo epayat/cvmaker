@@ -42,11 +42,11 @@ CREATE TABLE Language(
 CREATE TABLE Address(
   addressId INT PRIMARY KEY AUTO_INCREMENT,
   street1 VARCHAR(64) NOT NULL,
-  street2 VARCHAR(64) NOT NULL,
+  street2 VARCHAR(64),
   houseNr VARCHAR(16),
   postalCode VARCHAR(10),
-  city VARCHAR(64),
-  country VARCHAR(64),
+  city VARCHAR(64) NOT NULL ,
+  country VARCHAR(64) NOT NULL ,
   version INT
 );
 

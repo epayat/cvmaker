@@ -39,6 +39,12 @@ public class CandidateService {
                 else
                     candidateEntity.setPhoto(entityManager.merge(candidateEntity.getPhoto()));
             }
+            if (candidateEntity.getAddress() != null){
+                if (candidateEntity.getAddress().getAddressId() == null)
+                    entityManager.persist(candidateEntity.getAddress());
+                else
+                    candidateEntity.setAddress(entityManager.merge(candidateEntity.getAddress()));
+            }
             if (candidateEntity.getCandidateId() == null){
                 entityManager.persist(candidateEntity);
                 entityManager.getTransaction().commit();
