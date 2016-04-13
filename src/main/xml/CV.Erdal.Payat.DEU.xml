@@ -2,9 +2,9 @@
 <?xml-stylesheet type='text/xsl' href='CV.Atlantis.xslt'?>
 <Resume language="DEU"
         anonym="false"
-        anonymId="Kontaktperson: Volkmar Nebelung"
-        recruiterName="VARIUS IT GmbH &amp; Co. KG "
-        recruiterEmail="Volkmar.Nebelung@varius-it.com">
+        anonymId="Kontaktperson: André Wegner"
+        recruiterName="Phoenix Telent Limited"
+        recruiterEmail="info@phoenix-talent.net">
   <Personal>
     <FirstName>Erdal</FirstName>
     <LastName>Payat</LastName>
@@ -320,7 +320,7 @@
         <Task>
           <Summary>Entwicklung einer Web basierten Lebenslauf-Erstellungstool.</Summary>
           <Detail>Research, Design, Entwicklung eines Lebenslauf-Erstellungstools.</Detail>
-          <Detail>Automasierte Test Verfahren.</Detail>     
+          <Detail>Automatisierte Test Verfahren.</Detail>
         </Task>
       </Tasks>
       <Technologies>
@@ -343,7 +343,7 @@
       <Tasks>
         <Task>
           <Summary>Mitarbeit an Daimler/Mercedes-Benz LKW Vertrieb Software(MBKS).</Summary>
-          <Detail>Research, Design, Entwicklung und automasierte Testen des Leasing-Bausteins von Daimler/Mercedes-Benz-Charterway-Projekt in Delphi 2009 und SQLite. Trotz erhebliche finanztechnische Komplexität, konnte ich meinen Teil fehlerfrei und vorzeitig liefern.</Detail>
+          <Detail>Research, Design, Entwicklung und automatisierte testen des Leasing-Bausteins von Daimler/Mercedes-Benz-Charterway-Projekt in Delphi 2009 und SQLite. Trotz erhebliche finanztechnische Komplexität, konnte ich meinen Teil fehlerfrei und vorzeitig liefern.</Detail>
           <Detail>Modernizierung des veralteten UI Designs und CodeBases.</Detail>
           <Detail>Entwicklung von vielen neuen Komponenten für die Modernizierung.</Detail>
             <!--
