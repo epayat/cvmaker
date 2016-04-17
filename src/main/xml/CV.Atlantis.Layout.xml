@@ -20,23 +20,23 @@
         <RightCol skillId="2"/>
       </Row>
       <Row>
-        <LeftCol skillId="3"/>
+        <LeftCol skillId="9"/>
         <RightCol skillId="4"/>
       </Row>
       <Row>
-        <LeftCol skillId="1"/>
+        <LeftCol skillId="11"/>
         <RightCol skillId="6"/>
       </Row>
       <Row>
-        <LeftCol skillId="7"/>
+        <LeftCol skillId="3"/>
         <RightCol skillId="8"/>
       </Row>
       <Row>
-        <LeftCol skillId="9"/>
+        <LeftCol skillId="7"/>
         <RightCol skillId="10"/>
       </Row>
       <Row>
-        <LeftCol skillId="11"/>
+        <LeftCol skillId="1"/>
         <RightCol skillId="12"/>
       </Row>
     </Rows>

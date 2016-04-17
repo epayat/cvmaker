@@ -66,8 +66,8 @@
         </Name>
         <Icon url="images/Win7JavaLibrary.png"/>
         <Details>
-          <Detail id="1">JDK 1.7, Intelli-J Idea / Eclipse</Detail>
-          <Detail id="2">Wicket, Spring, JPA, Hybernate, EcliplselLink, Servlet, Jersey, Apache POI, Apache OLTU(OAuth2), SWT, RCP, Maven</Detail>
+          <Detail id="1">JDK 1.8, Intelli-J Idea / Eclipse</Detail>
+          <Detail id="2">Wicket, Spring, JPA, Hibernate, EclipseLink, Servlet, Jersey, Apache POI, Apache OLTU(OAuth2), Apache FOP, SWT, RCP, Jetty, Tomcat, IBM WAS, Maven</Detail>
         </Details>
       </Skill>      
     </SkillGroup>
