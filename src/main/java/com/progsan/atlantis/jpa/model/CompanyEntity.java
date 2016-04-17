@@ -1,6 +1,9 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Version;
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
@@ -8,11 +11,12 @@ import java.util.Collection;
  */
 @javax.persistence.Entity
 @javax.persistence.Table(name = "Company")
-public class CompanyEntity {
+public class CompanyEntity implements Serializable {
     private Integer companyId;
 
     @javax.persistence.Id
     @javax.persistence.Column(name = "companyId", nullable = true)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public Integer getCompanyId() {
         return companyId;
     }

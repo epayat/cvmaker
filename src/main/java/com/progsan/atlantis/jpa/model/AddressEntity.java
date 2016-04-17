@@ -3,13 +3,14 @@ package com.progsan.atlantis.jpa.model;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Version;
+import java.io.Serializable;
 
 /**
  * Created by Erdal on 30.01.2016.
  */
 @javax.persistence.Entity
 @javax.persistence.Table(name = "Address")
-public class AddressEntity {
+public class AddressEntity implements Serializable {
     private Integer addressId;
 
     @javax.persistence.Id

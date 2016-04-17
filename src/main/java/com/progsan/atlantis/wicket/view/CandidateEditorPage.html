@@ -11,7 +11,7 @@
 
         <div class="col-md-2">
             <div class="row">
-                <img id="photo" src="cinqueterre.jpg" class="img-thumbnail" alt="photo" wicket:id="photo">
+                <img id="photo" src="cinqueterre.jpg" class="img-thumbnail" alt="photo" wicket:id="photo"/>
             </div>
             <div class="row">
                 <form action="post" class="form-inline" role="form" wicket:id ="updatePhotoForm">
@@ -59,6 +59,11 @@
                 <li>
                     <a href="#interests" role="tab" data-toggle="tab">
                         <i class="fa fa-cog"></i><span class="tab-label">Interests</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#companies" role="tab" data-toggle="tab">
+                        <i class="fa fa-cog"></i><span class="tab-label">Companies</span>
                     </a>
                 </li>
             </ul>
@@ -128,7 +133,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div class="tab-pane fade" id="address">
                     <h2>Your Postal Address</h2>
                     <form class="form-horizontal" wicket:id="addressForm">
@@ -178,7 +182,80 @@
                 </div>
                 <div class="tab-pane fade" id="career">
                     <h2>Career History</h2>
-                    <img src="http://lorempixel.com/400/400/cats/2" alt="Cats"/>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" id="panel1">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-target="#collapseOne"
+                                       href="#collapseOne">
+                                        Collapsible Group Item #1
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="panel2">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-target="#collapseTwo"
+                                       href="#collapseTwo" class="collapsed">
+                                        Collapsible Group Item #2
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="panel3">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-target="#collapseThree"
+                                       href="#collapseThree" class="collapsed">
+                                        Collapsible Group Item #3
+                                    </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel 1</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">Panel content</div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel 2</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">Panel content</div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel 3</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">Panel content</div>
+                    </div>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel 4</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">Panel content</div>
+                    </div>
+                    -->
                 </div>
                 <div class="tab-pane fade" id="skills">
                     <h2>Your Skills</h2>
@@ -191,6 +268,76 @@
                 <div class="tab-pane fade" id="interests">
                     <h2>Your Interests</h2>
                     <img src="http://lorempixel.com/400/400/cats/4" alt="Cats"/>
+                </div>
+                <div class="tab-pane fade" id="companies">
+                    <h2>Companies</h2>
+                    <!-- Button trigger modal
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#companyEditor">New Company</button>
+                    -->
+                    <button type="button" class="btn btn-primary btn-lg" wicket:id="btnNewCompany">New Company</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="companyEditor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <form class="form-horizontal" wicket:id="companyForm">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Company Editor</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="street1">Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="name" wicket:id="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="description">description</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="description" wicket:id="description" placeholder="Description">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="houseNr">Company-Size</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="companySize" wicket:id="companySize" placeholder="Company-Size">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="industry">Industry</label>
+                                        <div class="col-sm-10">
+                                            <select id="industry" class="form-control" wicket:id="industry">
+                                                <option id="1">Finanz</option>
+                                                <option id="2">Bank</option>
+                                                <option id="3">Automobil</option>
+                                                <option id="4">Sofware</option>
+                                                <option id="5">Maschinenbau</option>
+                                                <option id="6">Immobilien</option>
+                                                <option id="7">Telekom</option>
+                                                <option id="8">Behörden</option>
+                                                <option id="9">Reiseportal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="defaultLogo">Logo</label>
+                                        <div class="col-sm-10">
+                                            <img id="defaultLogo" src="cinqueterre.jpg" class="img-thumbnail" alt="photo" wicket:id="logoImg"/>
+                                            <input class="branded-update-file-input" type="file" wicket:id="logo"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row" wicket:id="feedback"/>

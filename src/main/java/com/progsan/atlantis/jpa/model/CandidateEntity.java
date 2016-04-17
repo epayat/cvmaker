@@ -5,6 +5,7 @@ import org.apache.commons.io.IOUtils;
 import javax.persistence.*;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -19,7 +20,7 @@ import java.util.List;
 @javax.persistence.Entity
 @javax.persistence.Table(name = "Candidate")
 @NamedQuery(name = "findByEmail", query = "select p from CandidateEntity p where p.email = :email")
-public class CandidateEntity {
+public class CandidateEntity implements Serializable {
     private Integer candidateId;
     private AddressEntity address;
 

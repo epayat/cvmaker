@@ -1,5 +1,9 @@
 package com.progsan.atlantis.jpa.model;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.NamedQuery;
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
@@ -7,11 +11,13 @@ import java.util.Collection;
  */
 @javax.persistence.Entity
 @javax.persistence.Table(name = "Industry")
-public class IndustryEntity {
+@NamedQuery(name = "industry.list", query = "select p from IndustryEntity p")
+public class IndustryEntity implements Serializable {
     private Integer industryId;
 
     @javax.persistence.Id
     @javax.persistence.Column(name = "industryId", nullable = true)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     public Integer getIndustryId() {
         return industryId;
     }
