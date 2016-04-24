@@ -1,22 +1,28 @@
 package com.progsan.atlantis.wicket.view;
 
+import com.inmethod.grid.DataProviderAdapter;
+import com.inmethod.grid.IGridColumn;
+import com.inmethod.grid.column.LinkColumn;
+import com.inmethod.grid.column.PropertyColumn;
+import com.inmethod.grid.datagrid.DataGrid;
+import com.inmethod.grid.datagrid.DefaultDataGrid;
 import com.progsan.atlantis.jpa.model.*;
 import com.progsan.atlantis.jpa.service.CandidateService;
 import com.progsan.atlantis.jpa.service.CompanyService;
 import org.apache.commons.io.IOUtils;
-import org.apache.wicket.Session;
+import org.apache.wicket.PageReference;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
-import org.apache.wicket.ajax.markup.html.form.AjaxFallbackButton;
 import org.apache.wicket.extensions.markup.html.form.DateTextField;
-import org.apache.wicket.extensions.markup.html.form.select.Select;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.markup.html.form.upload.FileUpload;
 import org.apache.wicket.markup.html.form.upload.FileUploadField;
 import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
+import org.apache.wicket.markup.repeater.data.ListDataProvider;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.request.resource.DynamicImageResource;
 import org.apache.wicket.request.resource.IResource;
@@ -30,6 +36,7 @@ import javax.persistence.TypedQuery;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -118,7 +125,6 @@ public class CandidateEditorPage extends BaseWebPage {
 
             @Override
             public void detach() {
-
             }
         })) {
             protected void onSubmit(){
@@ -147,6 +153,30 @@ public class CandidateEditorPage extends BaseWebPage {
                 target.appendJavaScript("$(\"#companyEditor\").modal()");
             }
         });
+        final List<CompanyEntity> companyEntityList = getCompanyList();
+        final ListDataProvider<CompanyEntity> listDataProvider = new ListDataProvider(companyEntityList);
+        //define grid's columns
+        List<IGridColumn> columns = new ArrayList<IGridColumn>();
+        columns.add(new PropertyColumn(new Model("Company Name"), "name"));
+        columns.add(new PropertyColumn(new Model("Description"), "description"));
+        columns.add(new PropertyColumn(new Model("Size"), "companySize"));
+        columns.add(new PropertyColumn(new Model("Industry"), "industry"));
+
+        columns.add(new LinkColumn<CompanyEntity, CompanyEntity, CompanyEntity>("editLink", "edit", new Model("edit")) {
+            @Override
+            public void onClick(IModel<CompanyEntity> rowModel) {
+                getSessionData().setCompanyEntity(rowModel.getObject());
+                PageParameters parameters = new PageParameters();
+                parameters.add("id", rowModel.getObject().getCompanyId());
+                PageReference ref = (new CompanyEditorPage(parameters)).getPageReference();
+                setResponsePage(ref.getPage());
+            }
+        });
+
+
+        DataGrid gridCompany = new DefaultDataGrid("gridCompany", new DataProviderAdapter(listDataProvider), columns);
+
+        add(gridCompany);
 
         Form<CompanyEntity> companyForm = new Form<CompanyEntity>("companyForm", new CompoundPropertyModel<CompanyEntity>(new IModel<CompanyEntity>() {
             @Override
@@ -218,6 +248,12 @@ public class CandidateEditorPage extends BaseWebPage {
         this.add(companyForm);
 
         this.add(new FeedbackPanel("feedback"));
+    }
+
+    private List<CompanyEntity> getCompanyList() {
+        CompanyService companyService = new CompanyService(getEntityManagerFactory());
+
+        return companyService.getCompanyList();
     }
 
     private List<? extends IndustryEntity> getIndustryList() {

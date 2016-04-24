@@ -58,6 +58,11 @@ public class IndustryEntity implements Serializable {
         return result;
     }
 
+    @Override
+    public String toString(){
+        return this.getName();
+    }
+
     private Collection<CompanyEntity> companies;
 
     @javax.persistence.OneToMany(cascade = {}, mappedBy = "industry")

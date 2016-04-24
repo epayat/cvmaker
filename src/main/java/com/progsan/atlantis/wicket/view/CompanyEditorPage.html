@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <wicket:head>
+        <link type="text/css" rel="stylesheet" href="../css/CompanyEditorPage.css">
+    </wicket:head>
+</head>
+<body>
+<wicket:extend>
+<form class="form-horizontal" wicket:id="companyForm">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Company Editor</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="street1">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" wicket:id="name" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="description">description</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="description" wicket:id="description" placeholder="Description">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="companySize">Company-Size</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="companySize" wicket:id="companySize" placeholder="Company-Size">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="industry">Industry</label>
+            <div class="col-sm-10">
+                <select id="industry" class="form-control" wicket:id="industry">
+                    <option id="1">Finanz</option>
+                    <option id="2">Bank</option>
+                    <option id="3">Automobil</option>
+                    <option id="4">Sofware</option>
+                    <option id="5">Maschinenbau</option>
+                    <option id="6">Immobilien</option>
+                    <option id="7">Telekom</option>
+                    <option id="8">Behörden</option>
+                    <option id="9">Reiseportal</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="defaultLogo">Logo</label>
+            <div class="col-sm-10">
+                <img id="defaultLogo" src="cinqueterre.jpg" class="img-thumbnail" alt="photo" wicket:id="logoImg"/>
+                <input class="branded-update-file-input" type="file" wicket:id="logo"/>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Save changes</button>
+    </div>
+</form>
+</wicket:extend>
+</body>
+</html>

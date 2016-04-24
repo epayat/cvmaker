@@ -4,6 +4,8 @@ import com.progsan.atlantis.jpa.model.CompanyEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 /**
  * Created by Erdal on 17.04.2016.
@@ -46,6 +48,18 @@ public class CompanyService {
             if (entityManager.getTransaction().isActive())
                 entityManager.getTransaction().rollback();
             throw e;
+        }finally{
+            entityManager.close();
+        }
+    }
+    public List<CompanyEntity> getCompanyList(){
+        EntityManager entityManager = emf.createEntityManager();
+
+        try{
+            TypedQuery<CompanyEntity> query = entityManager.createNamedQuery("getAllCompanies", CompanyEntity.class);
+
+            return query.getResultList();
+
         }finally{
             entityManager.close();
         }

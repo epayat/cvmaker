@@ -1,9 +1,6 @@
 package com.progsan.atlantis.wicket;
 
-import com.progsan.atlantis.wicket.view.CandidateEditorPage;
-import com.progsan.atlantis.wicket.view.CallBackPageForFacebook;
-import com.progsan.atlantis.wicket.view.CallBackPageForGoogle;
-import com.progsan.atlantis.wicket.view.HomePage;
+import com.progsan.atlantis.wicket.view.*;
 import org.apache.wicket.Page;
 import org.apache.wicket.authroles.authentication.AbstractAuthenticatedWebSession;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebApplication;
@@ -40,6 +37,7 @@ public class WicketApplication extends AuthenticatedWebApplication {
     private void mountPages(){
         mountPage("/", getHomePage());
         mountPage("/candidate", CandidateEditorPage.class);
+        mountPage("/company", CompanyEditorPage.class);
         mountPage("/google-signed-in", CallBackPageForGoogle.class);
         mountPage("/fb-signed-in", CallBackPageForFacebook.class);
     }

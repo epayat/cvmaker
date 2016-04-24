@@ -2,6 +2,7 @@ package com.progsan.atlantis.jpa.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.NamedQuery;
 import javax.persistence.Version;
 import java.io.Serializable;
 import java.util.Collection;
@@ -11,6 +12,7 @@ import java.util.Collection;
  */
 @javax.persistence.Entity
 @javax.persistence.Table(name = "Company")
+@NamedQuery(name = "getAllCompanies", query = "select p from CompanyEntity p")
 public class CompanyEntity implements Serializable {
     private Integer companyId;
 
@@ -98,7 +100,10 @@ public class CompanyEntity implements Serializable {
         result = 31 * result + (version != null ? version.hashCode() : 0);
         return result;
     }
-
+    @Override
+    public String toString(){
+        return String.format("%d - %s",this.getCompanyId(), this.getName());
+    }
     private ImageEntity logo;
 
     @javax.persistence.OneToOne(cascade = {})
