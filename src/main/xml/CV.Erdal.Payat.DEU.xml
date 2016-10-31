@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet type='text/xsl' href='CV.Atlantis.xslt'?>
 <Resume language="DEU"
-        anonym="false"
-        anonymId="Kontaktperson: André Wegner"
-        recruiterName="Phoenix Telent Limited"
-        recruiterEmail="info@phoenix-talent.net">
+        anonym="true"
+        anonymId="Kontaktperson: Philipp Bienstock"
+        recruiterName="Roc Search Group"
+        recruiterEmail="p.bienstock@roc-search.de">
   <Personal>
     <FirstName>Erdal</FirstName>
     <LastName>Payat</LastName>
@@ -31,7 +31,7 @@
       <Interest>PC Hardware/Overclocking/Modding</Interest>
       <Interest>Schwimmen</Interest>
     </Interests>
-    <SalaryExpectation currency="€" per="year" kind="brut">75.000</SalaryExpectation>
+    <SalaryExpectation currency="€" per="year" kind="brut">85.000</SalaryExpectation>
     <EarlyStartDate>Ab sofort</EarlyStartDate>
     <DriversLicence>A</DriversLicence>
   </Personal>
@@ -82,7 +82,6 @@
           <Detail id="1">PL/SQL </Detail>
           <Detail id="2">Spatial API</Detail>
           <Detail id="3">Direct Path</Detail>
-          <Detail id="4">Objektorientierung durch Updatable Views</Detail>
         </Details>
       </Skill>
       <Skill id="4">
@@ -181,16 +180,17 @@
     </SkillGroup>   
   </Skills>
   <Fields>
-    <Field>Fahrzeugfinanzierung (Leasing &amp; Kredit)</Field>
+    <Field>Kognitive Anwendungen / Künstliche Intelligenz</Field>
+    <Field>Bildverarbeitung / Erkennung</Field>
+    <Field>Consumer Banking insbesondere Fahrzeugfinanzierung (Leasing &amp; Kredit)</Field>
     <Field>Enterprise Webanwendungen (Backend &amp; Frontend)</Field>
     <Field>Userinterface Design &amp; Development</Field>
     <Field>Business Software Beratung / Analysis / Design / Entwicklung</Field>
-    <Field>Bildverarbeitung / Erkennung</Field>
-    <Field>Kognitive Anwendungen</Field>
     <Field>System Programmierung / Komponentenentwicklung</Field>
     <Field>Datenbank Design / Optimierung / Programmierung / Migrieren</Field>
   </Fields>
   <PersonalDataSheet>
+    <Item startedOn="06/2016" endedOn="11/2016" formOfEmp="Freiberufler" instLogo="images/ING-DiBa-Logo.png" instName="ING-DIBA">Mitarbeit an einer Web basierten Consumer Banking Anwendung.</Item>
     <Item startedOn="02/2016" endedOn="05/2016" formOfEmp="Freiberufler" instLogo="images/deutsche-bank.png" instName="Deutsche Bank">Mitarbeit an einem Web basierten Deployment Automatiserungstool.</Item>
     <Item startedOn="04/2014" endedOn="04/2016" formOfEmp="Freiberufler" instLogo="images/logo-santander.png" instName="Santander Bank">Mitarbeit an einem Web basierten Fahrzeug-Finanzierung-System. Neue-Entwicklung eines web basierten Datenimporttools für die Captives. </Item>
     <Item startedOn="03/2013" endedOn="07/2013" formOfEmp="Freiberufler" instLogo="images/Progsan-Logo-Vert.png" instName="Progsan Software">Entwicklung einer Web basierten Lebenslauf-Erstellungstool. </Item>
@@ -204,9 +204,9 @@
     <Item startedOn="01/2005" endedOn="12/2005" formOfEmp="Freiberufler" instLogo="images/ZaunerPartner.png" instName="Zauner&amp;Parter">Komplete Entwicklung von einigen Software-Modulen für die Erkennung der Fahrdaten von Ausdrucken digitaler Tachographen und Analog Tachograph-Scheiben. Entwicklung eines kryptographischen Signatur-Überprüfung-Modules.</Item>
     <Item startedOn="02/2005" endedOn="04/2005" formOfEmp="Freiberufler" instLogo="images/LTur.png" instName="3w4u GmbH, Ltur">Mitarbeit an einem Reisebüro-Portals, das online Flug- und Hotelbuchung kombiniert.</Item>
     <Item startedOn="09/2001" endedOn="09/2002" formOfEmp="Sprachkurse"  instLogo="images/VHS.png" instName="VHS">Deutschkurs an der Volkshochschule bis zur Oberstufe.Studienkolleg an der Goethe Universität einschließlich DSH Zertifizierung.</Item>
-    <Item startedOn="09/1995" endedOn="07/2000" formOfEmp="Studium"      instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">Marmara Universität, Studiengang Computer &amp; Elektronik(Englisch)</Item>
-    <Item startedOn="09/1994" endedOn="07/1995" formOfEmp="Sprachkurs"   instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">English Preparing School an der Marmara Universität.</Item>
+    <Item startedOn="09/1994" endedOn="07/2000" formOfEmp="Studium"      instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">Marmara Universität, Englische Studiengang Computer &amp; Elektronik(Inkl. 1 Jahr Englisch Preparing School)</Item>
     <!--
+    <Item startedOn="09/1994" endedOn="07/1995" formOfEmp="Sprachkurs"   instLogo="images/MarmaraUnv.png" instName="Marmara Unv.">English Preparing School an der Marmara Universität.</Item>
     <Item startedOn="09/1992" endedOn="07/1994" formOfEmp="Studium"      instLogo="images/GaziUnv.png" instName="Gazi Unv.">Gazi Universität, Studiengang Computer &amp; Elektronik.</Item>
     <Item startedOn="09/1989" endedOn="07/1992" formOfEmp="Berufsschule" instLogo="images/mehmet akif ersoy end.meslek.lisesi.logo.png" instName="mehmet akif ersoy end.meslek lisesi">Mehmet Akif Ersoy Berufsschule Computer &amp; Elektronik</Item>
     -->
@@ -216,25 +216,57 @@
     <Language id="ENU" level="080"/>
     <Language id="TRK" level="100"/>
   </Languages>
-    <PersonalAchievements>
-        <item year="1996">SMS (Service Management System) Einführung für Canon Turkey(HESMAK)</item>
-        <item year="1997">Aufbau eines großen Wide-Area-Networks (umfasst 8 Städte) für einen Börsenhändler Unternehmen(GEDIK)</item>
-        <item year="1997">Entwicklung eines Datenbanktreibers für eine lokale file basierte Datenbank.</item>
-        <item year="1997">Entwicklung eines Datapump-Software, basiert auf den vorher entwickelten Treiber</item>
-        <item year="1998">Level-1 ODBC Trieber Entwicklung.</item>
-        <item year="1999">Entwicklung eines multidimensionalen Management Information Systems für ein großes Textil Unternehmen(YATAS)</item>
-        <item year="2000">Daten-Migration von einer lokalen Datenbank zum Oracle ERP Software R11.</item>
-        <item year="2000">Warenwirtschaft Software Entwicklung für Mitsubishi Elevators.</item>
-        <item year="2001">Warenwirtschaft Software Entwicklung für Diktas Yarn Company.</item>
-        <item year="2004">DSH Prüfung bestanden.</item>
-    </PersonalAchievements>
+  <PersonalAchievements>
+      <item year="1996">SMS (Service Management System) Einführung für Canon Turkey(HESMAK)</item>
+      <item year="1997">Aufbau eines großen Wide-Area-Networks (umfasst 8 Städte) für einen Börsenhändler Unternehmen(GEDIK)</item>
+      <item year="1997">Entwicklung eines Datenbanktreibers für eine lokale file basierte Datenbank.</item>
+      <item year="1997">Entwicklung eines Datapump-Software, basiert auf den vorher entwickelten Treiber</item>
+      <item year="1998">Level-1 ODBC Trieber Entwicklung.</item>
+      <item year="1999">Entwicklung eines multidimensionalen Management Information Systems für ein großes Textil Unternehmen(YATAS)</item>
+      <item year="2000">Daten-Migration von einer lokalen Datenbank zum Oracle ERP Software R11.</item>
+      <item year="2000">Warenwirtschaft Software Entwicklung für Mitsubishi Elevators.</item>
+      <item year="2001">Warenwirtschaft Software Entwicklung für Diktas Yarn Company.</item>
+      <item year="2004">DSH Prüfung bestanden.</item>
+  </PersonalAchievements>
   <CareerDetails>
+    <CareerDetail id="ing2016" type="Projekt" startedOn="06/2016" finishedOn="11/2016" duration="5M">
+      <Institution caption="ING-DIBA" field="Finanz, Bank" size="1000+ Mitarbeiter"></Institution>
+      <Tasks>
+        <Task>
+          <Summary>Web basierte Consumer Banking System für Call Clients.</Summary>
+          <Detail>Ein Struts + Wicket 7 basierte Banking-Frontend angeschlossen an einem EJB Middle-Ware welche auf Kernbanking System Kordoba24 gebaut ist.</Detail>
+          <Detail>Migration von noch auf Struts basierte Tageskonto-Eröffnungsstrecke zu Wicket 7.</Detail>
+          <Detail>Diverse UI Optimierungen (BG-FB Contrast, Schrift Größe etc) wurden durchgeführt um die User-Experience zu verbessern.</Detail>
+          <Detail>Durch von mir entwickelte Runtime-Mocks wurden einige außere Abhängigkeiten(externe Schnittstellen) für die Entwicklung reduziert und somit generell Entw. Aufwand reduziert.</Detail>
+        </Task>
+      </Tasks>
+      <Technologies>
+        <Technology caption="JDK 1.7"/>
+        <Technology caption="Oracle 12" />
+        <Technology caption="IntelliJ 15"/>
+        <Technology caption="Wicket 7"/>
+        <Technology caption="Spring-Frm."/>
+        <Technology caption="Tomcat"/>
+        <Technology caption="HTML"/>
+        <Technology caption="JQuery"/>
+        <Technology caption="EJB"/>
+        <Technology caption="Hibernate"/>
+        <Technology caption="Maven"/>
+        <Technology caption="Nexus"/>
+        <Technology caption="Jenkins"/>
+        <Technology caption="GIT"/>
+        <Technology caption="SVN"/>
+        <Technology caption="Stash"/>
+        <Technology caption="Jira"/>
+      </Technologies>
+    </CareerDetail>
     <CareerDetail id="db2016" type="Projekt" startedOn="02/2016" finishedOn="05/2016" duration="3M">
       <Institution caption="Deutsche Bank" field="Finanz, Bank" size="1000+ Mitarbeiter"></Institution>
       <Tasks>
         <Task>
-          <Summary>Web basierte Deployment Automatiserungstool(SQUAREs).</Summary>
-          <Detail>Full-automatische erstellung von angepassten Konfiguation-Datein für jede Stage (z.B. INT, PRE , PRO)</Detail>
+          <Summary>Auf Wicket und Bootstrap basierte Deployment Automatiserungstool(SQUAREs).</Summary>
+          <Detail>Design und Implementierung von eines Fuzzy-Matching-Algoritmus um mögliche Anderungen in Config-Dateien zu erkennen.</Detail>
+          <Detail>Full-automatische erstellung von angepassten Konfiguation-Datein für jede Deployment-Stage (z.B. INT, PRE , PRO)</Detail>
           <Detail>Automatische deployment von Web-Anwendungen auf verschiedene App-Containers</Detail>
         </Task>
       </Tasks>
@@ -262,17 +294,17 @@
       <Institution caption="Santander Consumer Bank / ISBAN" field="Finanz, Bank" size="1000+ Mitarbeiter"/>
       <Tasks>
         <Task>
+          <Summary>Semi-Automatic Datenimport-Tool für Captives</Summary>
+          <Detail>Einsatz von Künstliche Intelligenz um von als Excel Datei verfassten Preislisten nützliche Informationen zu erkennen und zu extraktrieren.</Detail>
+          <Detail>Automatische Fahrzeugmodell und Restwert-Tafels Import von solchen Excel-Dateien mit sehr wenigem bzw gar keinem Aufwand.</Detail>
+          <Detail>Interactive AJAX Web Oberfläche mit Apache-Wicket-6 und JQueryUI.</Detail>
+          <Detail>Deployment auf IBM Websphere 7.0 Application Server</Detail>
+        </Task>
+        <Task>
           <Summary>Web-Basierte Fahrzeug-Finanzierung Software (Kosyfa)</Summary>
           <Detail>Finanzmathematische Umsetzung von Leasing und Kredit Anträge(Kalkulation-Kern).</Detail>
           <Detail>SOAP Schnittstellen zu den Entscheidungssysteme.</Detail>
           <Detail>Fahrzeugmodell, und Kondition Datenbank.</Detail>
-        </Task>
-        <Task>
-          <Summary>Datenimport-Tool für Captives</Summary>
-          <Detail>Voll-Automatische Fahrzeugmodell und Restwert-Tafel Import von Excel-Dateien.</Detail>
-          <Detail>Interactive AJAX Web Oberfläche mit Apache-Wicket-6 und JQueryUI.</Detail>
-          <Detail>Einsatz von Künstliche Intelligenz für die Excel-Mappen-Analyse.</Detail>
-          <Detail>Deployment auf IBM Websphere 7.0 Application Server</Detail>
         </Task>
         <Task>
           <Summary>Branded OAuth-2 Authentifizierung und SSO Server</Summary>
@@ -346,17 +378,14 @@
           <Detail>Research, Design, Entwicklung und automatisierte testen des Leasing-Bausteins von Daimler/Mercedes-Benz-Charterway-Projekt in Delphi 2009 und SQLite. Trotz erhebliche finanztechnische Komplexität, konnte ich meinen Teil fehlerfrei und vorzeitig liefern.</Detail>
           <Detail>Modernizierung des veralteten UI Designs und CodeBases.</Detail>
           <Detail>Entwicklung von vielen neuen Komponenten für die Modernizierung.</Detail>
-            <!--
-              <Detail>Entwicklung von Code-Generatoren.Umsetzung erfolgte in C#.NET 4.0.</Detail>
-
-            <Detail>Entwurf von vielen neuen Icons für die UI-Modernizierung mit Gimp.</Detail>
-            -->
+          <Detail>Entwicklung von Code-Generatoren.Umsetzung erfolgte in C#.NET 4.0.</Detail>
+          <Detail>Entwurf von vielen neuen Icons für die UI-Modernizierung mit Gimp.</Detail>
         </Task>
       </Tasks>
       <Technologies>
-        <Technology caption="Delphi 2007"/>
         <Technology caption="Visual Studio"/>
         <Technology caption="C#.NET 4.0"/>
+        <Technology caption="Delphi 2007"/>
         <Technology caption="WinAPI" />
         <Technology caption="SQLite"/>
         <Technology caption="XML"/>
@@ -415,10 +444,10 @@
         </Task>
       </Tasks>
       <Technologies>
-        <Technology caption="Delphi 2007"/>
-        <Technology caption="WinAPI"/>
         <Technology caption="Visual Studio"/>
         <Technology caption="C#.NET 2.0"/>
+        <Technology caption="Delphi 2007"/>
+        <Technology caption="WinAPI"/>
         <Technology caption="XML"/>
         <Technology caption="MS-INET"/>
         <Technology caption="MS-COM"/>
@@ -646,13 +675,11 @@
     <Certificate id="ISTQB"   issueDate="Sep2010"  icon="images/ISTQB.png">ISTQB Certified Tester Foundation Level</Certificate>
   </Certificates>
   <Screenshots>
-    <Screenshot id="SC1" image="images/screenshots/image008.png">Windows Power Management Toolkit</Screenshot>
-    <Screenshot id="SC2" image="images/screenshots/TuneUp_PerfOpt2011.png">TuneUp Performance-Optimizer-Module Benutzeroberfläche</Screenshot>
-    <Screenshot id="SC3" image="images/screenshots/sc_servo_new_loading.png">Ein HMI Prototyp für Visu-Design-Framework</Screenshot>
-    <Screenshot id="SC4" image="images/screenshots/TuneUp Eco-Modus.png">Von mir entwickelte Economy-Modus von TuneUp Utilities</Screenshot>    
-    <Screenshot id="SC5" image="images/screenshots/SC004.gif">Erkennung der Fahrdaten von einer Tachograph-Scheibe</Screenshot>
-    <Screenshot id="SC6" image="images/screenshots/SC005.gif">HTML Eingabemasken Designer</Screenshot>
-    <Screenshot id="SC7" image="images/screenshots/SC006.gif">PDF Report Preview / PDF Report Designer</Screenshot>
-    <Screenshot id="SC8" image="images/screenshots/Eclipse SWT Form Designer Plugin.png">Eclipse SWT Form Designer Plugin(ein Forschungsprojekt)</Screenshot>     
+    <Screenshot id="SC1" image="images/screenshots/SC004.gif">Erkennung der Fahrdaten von einer Tachograph-Scheibe</Screenshot>
+    <Screenshot id="SC2" image="images/screenshots/sc_servo_new_loading.png">Ein HMI Prototyp für Visu-Design-Framework</Screenshot>
+    <Screenshot id="SC3" image="images/screenshots/image008.png">Windows Power Management Toolkit</Screenshot>
+    <Screenshot id="SC4" image="images/screenshots/SC005.gif">HTML Eingabemasken Designer</Screenshot>
+    <Screenshot id="SC5" image="images/screenshots/SC006.gif">PDF Report Preview / PDF Report Designer</Screenshot>
+    <Screenshot id="SC6" image="images/screenshots/Eclipse SWT Form Designer Plugin.png">Eclipse SWT Form Designer Plugin(ein Forschungsprojekt)</Screenshot>
   </Screenshots>
 </Resume>
